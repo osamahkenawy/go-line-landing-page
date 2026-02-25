@@ -28,10 +28,10 @@ const About = () => {
                     </Link>
                   </li>
                 </ul>
-                <h2>Nothing to worry about with Quickeat</h2>
+                <h2>Your Trusted Last-Mile Delivery Partner</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
+                  Go-Line delivers more than packages — we deliver reliability,
+                  speed, and peace of mind for businesses of all sizes.
                 </p>
               </div>
             </div>
@@ -69,15 +69,17 @@ const About = () => {
               data-aos-duration={500}
             >
               <div className="our-mission-text">
-                <h2>Our mission is to save you time</h2>
+                <h2>Our mission is to make delivery effortless</h2>
                 <p>
-                  Viverra vitae congue eu consequat ac felis. Imperdiet massa
-                  tincidunt nunc pulvinar sapien et ligula ullamcorper. Velit ut
-                  tortor pretium viverra suspendisse potenti nullam ac tortor.
+                  Go-Line was founded with one goal: to make business deliveries
+                  faster, smarter, and completely transparent. We leverage
+                  technology and a network of dedicated drivers to ensure every
+                  shipment arrives on time.
                   <br />
                   <br />
-                  Eget egestas purus viverra accumsan in nisl nisi scelerisque.
-                  Tincidunt augue interdum velit euismod in pellentesque.
+                  Whether you&apos;re a small business or a large enterprise, our
+                  mission is to be the logistics backbone you can rely on every
+                  single day.
                 </p>
               </div>
             </div>
@@ -105,10 +107,10 @@ const About = () => {
                   alt="icon"
                   src="assets/img/service-icon-1.svg"
                 />
-                <h3>Free Delivery</h3>
+                <h3>Fast Delivery</h3>
                 <p>
-                  Cras fermentum odio eu feugiat pretium nibh ipsum. Ut faucibus
-                  pulvinar elementum consequat integer enim neque volutpat.
+                  We guarantee same-day and next-day delivery across all
+                  covered zones. Speed is our promise to your customers.
                 </p>
               </div>
             </div>
@@ -129,10 +131,10 @@ const About = () => {
                   alt="icon"
                   src="assets/img/service-icon-4.svg"
                 />
-                <h3>Save Your Time</h3>
+                <h3>Save Time &amp; Costs</h3>
                 <p>
-                  Vulputate dignissim suspendisse in est ante in nibh mauris.
-                  Pretium nibh ipsum consequat nisl vel pretium lectus quam id.
+                  Outsourcing your delivery to Go-Line reduces overhead costs
+                  and frees your team to focus on what matters most.
                 </p>
               </div>
             </div>
@@ -153,11 +155,10 @@ const About = () => {
                   alt="icon"
                   src="assets/img/service-icon-6.svg"
                 />
-                <h3>Regular Discounts</h3>
+                <h3>Competitive Pricing</h3>
                 <p>
-                  Nec tincidunt praesent semper feugiat nibh. Feugiat in ante
-                  metus dictum. Sapien nec sagittis aliquam malesuada bibendum
-                  arcu.
+                  Transparent, competitive pricing with no hidden fees. Choose
+                  a plan that fits your delivery volume and budget.
                 </p>
               </div>
             </div>
@@ -178,11 +179,10 @@ const About = () => {
                   alt="icon"
                   src="assets/img/service-icon-8.svg"
                 />
-                <h3>Variety Food</h3>
+                <h3>Wide Zone Coverage</h3>
                 <p>
-                  Molestie a iaculis at erat pellentesque. Pulvinar neque
-                  laoreet suspendisse interdum consectetur libero id faucibus
-                  nisl.
+                  Our network spans 50+ delivery zones, ensuring your packages
+                  reach every corner of the country reliably.
                 </p>
               </div>
             </div>
@@ -200,30 +200,30 @@ const About = () => {
               data-aos-duration={300}
             >
               <div className="wait-a-minute">
-                <h2>Wait a minute for delicious</h2>
+                <h2>Why Go-Line is the right choice for your business</h2>
                 <p>
-                  Amet massa vitae tortor condimentum lacinia quis. Elit at
-                  imperdiet dui accumsan sit amet nulla facilisi. Lacus laoreet
-                  non curabitur gravida arcu ac tortor dignissim.
+                  We combine cutting-edge technology, a dedicated courier fleet,
+                  and deep local knowledge to deliver a seamless experience for
+                  you and your customers.
                 </p>
-                <h6>Interdum varius sit amet mattis.</h6>
+                <h6>What sets us apart:</h6>
                 <ul className="paragraph">
                   <li>
                     <i className="fa-solid fa-circle-check" />
-                    <h5>Interdum varius sit amet mattis;</h5>
+                    <h5>Real-time GPS tracking on every shipment;</h5>
                   </li>
                   <li>
                     <i className="fa-solid fa-circle-check" />
-                    <h5>Sed elementum tempus egestas sed sed;</h5>
+                    <h5>Dedicated account manager for business clients;</h5>
                   </li>
                   <li>
                     <i className="fa-solid fa-circle-check" />
-                    <h5>Sit amet purus gravida quis blandit;</h5>
+                    <h5>Proof-of-delivery photos and digital signatures;</h5>
                   </li>
                   <li>
                     <i className="fa-solid fa-circle-check" />
                     <h5>
-                      Feugiat pretium nibh ipsum consequat nisl vel pretium.
+                      Same-day delivery available across all major zones.
                     </h5>
                   </li>
                 </ul>
@@ -274,22 +274,22 @@ const About = () => {
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-6">
                   <div className="counter-hading">
-                    <h2>Service shows good taste.</h2>
+                    <h2>Our numbers speak for themselves.</h2>
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6">
                   <div className="count-time">
                     <h2
                       className="timer count-title count-number"
-                      data-to={976}
+                      data-to={5000}
                       data-speed={2000}
                     >
-                      976
+                      5K+
                     </h2>
                     <p>
-                      Satisfied
+                      Packages
                       <br />
-                      Customer
+                      Delivered
                     </p>
                   </div>
                 </div>
@@ -302,15 +302,15 @@ const About = () => {
                   <div className="count-time">
                     <h2
                       className="timer count-title count-number"
-                      data-to={12}
+                      data-to={50}
                       data-speed={2000}
                     >
-                      12
+                      50+
                     </h2>
                     <p>
-                      Best
+                      Delivery
                       <br />
-                      Restaurants
+                      Zones
                     </p>
                   </div>
                 </div>
@@ -318,16 +318,16 @@ const About = () => {
                   <div className="count-time sp">
                     <h2
                       className="timer count-title count-number"
-                      data-to={1}
+                      data-to={200}
                       data-speed={2000}
                     >
-                      1
+                      200
                     </h2>
-                    <span>k+</span>
+                    <span>+</span>
                     <p>
-                      Food
+                      Business
                       <br />
-                      Delivered
+                      Partners
                     </p>
                   </div>
                 </div>
@@ -347,9 +347,7 @@ const About = () => {
           >
             <h2>Our team</h2>
             <p>
-              Enim lobortis scelerisque fermentum dui faucibus. Tempor commodo
-              ullamcorper a lacus vestibulum sed arcu non. Magna ac placerat
-              vestibulum lectus mauris.
+              The Go-Line team is made up of logistics experts, technology engineers, and operations specialists — all dedicated to making your deliveries faster and more reliable.
             </p>
           </div>
           <div className="row">
@@ -363,9 +361,9 @@ const About = () => {
                 <img alt="team-img" src="assets/img/team-1.png" />
                 <h4>
                   {" "}
-                  <a href="#">Kevin Adamson</a>
+                  <a href="#">Khalid Al-Farsi</a>
                 </h4>
-                <p>Pellentesque adipiscing commodo elit at imperdiet dui.</p>
+                <p>Head of Operations — 10+ years in logistics and supply chain management.</p>
                 <ul className="social-media">
                   <li>
                     {" "}
@@ -398,11 +396,10 @@ const About = () => {
                 <img alt="team-img" src="assets/img/team-2.png" />
                 <h4>
                   {" "}
-                  <a href="#">Roxie Gilbert</a>
+                  <a href="#">Sara Al-Zahrani</a>
                 </h4>
                 <p>
-                  Velit dignissim sodales ut eu sem integer vitae. Interdum
-                  varius sit amet mattis.
+                  Chief Technology Officer — leading our delivery platform and driver app development.
                 </p>
                 <ul className="social-media">
                   <li>
@@ -436,9 +433,9 @@ const About = () => {
                 <img alt="team-img" src="assets/img/team-3.png" />
                 <h4>
                   {" "}
-                  <a href="#">Edgar Johnson</a>
+                  <a href="#">Omar Al-Rashidi</a>
                 </h4>
-                <p>At erat pellentesque adipiscing commodo elit.</p>
+                <p>Business Development Lead — building partnerships across Saudi Arabia and the region.</p>
                 <ul className="social-media">
                   <li>
                     {" "}
@@ -483,37 +480,37 @@ const About = () => {
             <SwiperSlide className="item">
               <div className="logo-img">
                 <img alt="logo-img" src="assets/img/logo-1.png" />
-                <h5>Kings Arms</h5>
+                <h5>Noon</h5>
               </div>
             </SwiperSlide>
             <SwiperSlide className="item">
               <div className="logo-img">
                 <img alt="logo-img" src="assets/img/logo-2.png" />
-                <h5>Wilmington</h5>
+                <h5>Tamimi</h5>
               </div>
             </SwiperSlide>
             <SwiperSlide className="item">
               <div className="logo-img">
                 <img alt="logo-img" src="assets/img/logo-3.png" />
-                <h5>Kennington</h5>
+                <h5>Jarir</h5>
               </div>
             </SwiperSlide>
             <SwiperSlide className="item">
               <div className="logo-img">
                 <img alt="logo-img" src="assets/img/logo-4.png" />
-                <h5>The Victoria</h5>
+                <h5>Saco</h5>
               </div>
             </SwiperSlide>
             <SwiperSlide className="item">
               <div className="logo-img">
                 <img alt="logo-img" src="assets/img/logo-5.png" />
-                <h5>The Andover Arms</h5>
+                <h5>Nana</h5>
               </div>
             </SwiperSlide>
             <SwiperSlide className="item">
               <div className="logo-img">
                 <img alt="logo-img" src="assets/img/logo-1.png" />
-                <h5>Kings Arms</h5>
+                <h5>Mrsool</h5>
               </div>
             </SwiperSlide>
           </Swiper>
@@ -530,10 +527,9 @@ const About = () => {
           <div className="row">
             <div className="col-xl-4 col-lg-12">
               <div className="good-taste">
-                <h2>Service shows good taste.</h2>
+                <h2>Built for reliability.</h2>
                 <p>
-                  Enim lobortis scelerisque fermentum dui faucibus. Tempor
-                  commodo ullamcorper a lacus vestibulum sed arcu non.
+                  Go-Line is committed to making last-mile delivery fast, transparent, and dependable for every business we serve.
                 </p>
               </div>
             </div>
@@ -545,15 +541,12 @@ const About = () => {
                 <SwiperSlide>
                   <div className="author-text item">
                     <p>
-                      "Tortor vitae purus faucibus ornare suspendisse. Ut
-                      porttitor leo a diam. Massa tincidunt nunc pulvinar sapien
-                      et ligula ullamcorper malesuada proin. Ut tortor pretium
-                      viverra suspendisse".
+                      "Go-Line transformed how we handle our daily deliveries. Real-time tracking and on-time performance have made a huge difference for our business."
                     </p>
                     <div className="thomas">
-                      <img alt="girl" src="assets/img/photo-5.jpg" />
+                      <img alt="reviewer" src="assets/img/photo-5.jpg" />
                       <div>
-                        <h6>Thomas Adamson</h6>
+                        <h6>Ahmed Al-Rashidi</h6>
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
@@ -566,15 +559,12 @@ const About = () => {
                 <SwiperSlide>
                   <div className="author-text item">
                     <p>
-                      "Tortor vitae purus faucibus ornare suspendisse. Ut
-                      porttitor leo a diam. Massa tincidunt nunc pulvinar sapien
-                      et ligula ullamcorper malesuada proin. Ut tortor pretium
-                      viverra suspendisse".
+                      "We switched from three different couriers to Go-Line and never looked back. One platform, one invoice, and everything on time."
                     </p>
                     <div className="thomas">
-                      <img alt="girl" src="assets/img/photo-5.jpg" />
+                      <img alt="reviewer" src="assets/img/photo-5.jpg" />
                       <div>
-                        <h6>Thomas Adamson</h6>
+                        <h6>Sara Khalid</h6>
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
@@ -587,15 +577,12 @@ const About = () => {
                 <SwiperSlide>
                   <div className="author-text item">
                     <p>
-                      "Tortor vitae purus faucibus ornare suspendisse. Ut
-                      porttitor leo a diam. Massa tincidunt nunc pulvinar sapien
-                      et ligula ullamcorper malesuada proin. Ut tortor pretium
-                      viverra suspendisse".
+                      "Exceptional service and competitive pricing. Our e-commerce brand relies on Go-Line for all last-mile fulfillment across Riyadh."
                     </p>
                     <div className="thomas">
-                      <img alt="girl" src="assets/img/photo-5.jpg" />
+                      <img alt="reviewer" src="assets/img/photo-5.jpg" />
                       <div>
-                        <h6>Thomas Adamson</h6>
+                        <h6>Khaled Bin Nasser</h6>
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
@@ -608,15 +595,12 @@ const About = () => {
                 <SwiperSlide>
                   <div className="author-text item">
                     <p>
-                      "Tortor vitae purus faucibus ornare suspendisse. Ut
-                      porttitor leo a diam. Massa tincidunt nunc pulvinar sapien
-                      et ligula ullamcorper malesuada proin. Ut tortor pretium
-                      viverra suspendisse".
+                      "The dedicated account manager and transparent pricing make Go-Line the most trusted delivery partner we have worked with."
                     </p>
                     <div className="thomas">
-                      <img alt="girl" src="assets/img/photo-5.jpg" />
+                      <img alt="reviewer" src="assets/img/photo-5.jpg" />
                       <div>
-                        <h6>Thomas Adamson</h6>
+                        <h6>Nora Al-Ghamdi</h6>
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
@@ -645,7 +629,7 @@ const About = () => {
                   data-aos-delay={200}
                   data-aos-duration={300}
                 >
-                  Get the menu of your favorite restaurants every day
+                  Stay updated with Go-Line delivery news and exclusive offers
                 </h2>
                 <form
                   onSubmit={(e) => e.preventDefault()}

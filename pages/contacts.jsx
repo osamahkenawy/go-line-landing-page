@@ -25,10 +25,11 @@ const Contacts = () => {
                     </Link>
                   </li>
                 </ul>
-                <h2>Contact us</h2>
+                <h2>Get in touch with Go-Line</h2>
                 <p>
-                  Egestas sed tempus urna et pharetra pharetra massa. Fermentum
-                  posuere urna nec tincidunt praesent semper.
+                  We&apos;re here to help with any delivery questions, partnership
+                  inquiries, or support requests. Reach out and we&apos;ll respond
+                  promptly.
                 </p>
               </div>
               <div className="row">
@@ -36,34 +37,34 @@ const Contacts = () => {
                   <div className="address">
                     <i className="fa-solid fa-location-dot" />
                     <h5>
-                      1717 Harrison St, San Francisco, CA 94103, United States
+                      King Fahd Road, Riyadh 12271, Saudi Arabia
                     </h5>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-12">
                   <div className="address">
                     <i className="fa-solid fa-envelope" />
-                    <a href="mailto:quick.info@mail.net">
-                      <h6>quick.info@mail.net</h6>
+                    <a href="mailto:info@go-line.sa">
+                      <h6>info@go-line.sa</h6>
                     </a>
-                    <span>Lorem ipsum dolor sit.</span>
-                    <a href="mailto:quick.info@mail.net">
-                      <h6>quick.info@mail.net</h6>
+                    <span>General inquiries &amp; support</span>
+                    <a href="mailto:partners@go-line.sa">
+                      <h6>partners@go-line.sa</h6>
                     </a>
-                    <span>Dolore magna aliqua</span>
+                    <span>Partnership requests</span>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-12">
                   <div className="address">
                     <i className="fa-solid fa-phone" />
-                    <a href="callto:+14253261627">
-                      <h6>+1 425 326 16 27</h6>
+                    <a href="callto:+966500000000">
+                      <h6>+966 50 000 0000</h6>
                     </a>
-                    <span>Et netus et malesuada</span>
-                    <a href="callto:+14253261627">
-                      <h6>+1 425 326 16 27</h6>
+                    <span>Customer support line</span>
+                    <a href="callto:+966500000001">
+                      <h6>+966 50 000 0001</h6>
                     </a>
-                    <span>Enim tortor auctor urna</span>
+                    <span>Business &amp; sales team</span>
                   </div>
                 </div>
               </div>
@@ -93,10 +94,10 @@ const Contacts = () => {
             >
               <div className="contact-map-data">
                 <div className="join-courier content">
-                  <h3>Get in touch with us</h3>
+                  <h3>Send us a message</h3>
                   <p>
-                    Magna sit amet purus gravida quis blandit turpis cursus.
-                    Venenatis tellus in metus vulputate eu scelerisque felis.
+                    Fill in the form and our team will get back to you within
+                    24 hours. For urgent delivery issues, please call us directly.
                   </p>
                   <form
                     onSubmit={(e) => e.preventDefault()}
@@ -127,7 +128,7 @@ const Contacts = () => {
                 </div>
                 <div className="contact-map">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689446.104646556!2d28.705460424349365!3d48.83127549941125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d1d9c154700e8f%3A0x1068488f64010!2sUkraine!5e0!3m2!1sen!2s!4v1661009847728!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.3929839093!2d46.6752957!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sKing%20Fahd%20Road%2C%20Riyadh!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa"
                     width={600}
                     height={450}
                     style={{ border: 0 }}

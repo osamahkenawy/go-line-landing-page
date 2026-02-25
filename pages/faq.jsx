@@ -26,10 +26,10 @@ const Faq = () => {
                     </Link>
                   </li>
                 </ul>
-                <h2>Want to join partnership?</h2>
+                <h2>Frequently Asked Questions</h2>
                 <p>
-                  Egestas sed tempus urna et pharetra pharetra massa. Fermentum
-                  posuere urna nec tincidunt praesent semper.
+                  Find answers to the most common questions about Go-Line
+                  delivery services, tracking, and partnerships.
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ const Faq = () => {
                       aria-controls="v-pills-profile"
                       aria-selected="false"
                     >
-                      Technical
+                      Tracking & Technology
                     </button>
                     <button
                       className={`nav-link ${tab == 3 ? "active" : ""}`}
@@ -97,7 +97,7 @@ const Faq = () => {
                       aria-controls="v-pills-messages"
                       aria-selected="false"
                     >
-                      Restaurants
+                      Pricing & Plans
                     </button>
                   </div>
                   <form onSubmit={(e) => e.preventDefault()}>
@@ -119,119 +119,63 @@ const Faq = () => {
                     <div className="questions">
                       <i className="fa-solid fa-q" />
                       <h6>
-                        Question 1. Volutpat maecenas volutpat blandit aliquam
-                        etiam erat velit. Diam donec adipiscing tristique risus
-                        nec feugiat in fermentum posuere?
+                        Question 1. How do I place a delivery order with Go-Line?
                       </h6>
                     </div>
                     <div className="questions answer">
                       <p>
-                        Quis ipsum suspendisse ultrices gravida dictum. Aliquam
-                        eleifend mi in nulla posuere sollicitudin aliquam
-                        ultrices. Ut sem nulla pharetra diam sit amet nisl
-                        suscipit. Diam vulputate ut pharetra sit amet aliquam id
-                        diam maecenas. Amet mauris commodo quis imperdiet massa
-                        tincidunt nunc pulvinar sapien.
+                        Placing an order is simple. You can request a pickup through our website or mobile app. Fill in the pickup and drop-off addresses, select your delivery type (Express, Same-Day, or Scheduled), and confirm. Our nearest driver will be assigned immediately.
                         <br />
                         <br />
-                        Suspendisse ultrices gravida dictum fusce ut. Tempor
-                        commodo ullamcorper a lacus vestibulum sed. Risus at
-                        ultrices mi tempus imperdiet. Proin sagittis nisl
-                        rhoncus mattis rhoncus urna neque.
+                        For business accounts, you can also submit bulk orders via our business portal or API integration.
                       </p>
                       <i className="fa-solid fa-a" />
                     </div>
                     <div className="questions">
                       <i className="fa-solid fa-q" />
                       <h6>
-                        Question 2. Id neque aliquam vestibulum morbi. Integer
-                        vitae justo eget magna fermentum iaculis eu non diam.
-                        Nam libero justo laoreet sit amet cursus sit amet.
-                        Platea dictumst quisque sagittis purus sit amet volutpat
-                        consequat?
+                        Question 2. What delivery zones does Go-Line currently cover?
                       </h6>
                     </div>
                     <div className="questions answer">
                       <p>
-                        Condimentum mattis pellentesque id nibh tortor id
-                        aliquet lectus. Massa id neque aliquam vestibulum morbi
-                        blandit cursus risus. Elementum sagittis vitae et leo
-                        duis ut diam quam. A cras semper auctor neque vitae
-                        tempus quam pellentesque. Cursus vitae congue mauris
-                        rhoncus aenean vel. Ut aliquam purus sit amet luctus
-                        venenatis lectus magna. Fringilla est ullamcorper eget
-                        nulla. Tempor id eu nisl nunc mi ipsum faucibus vitae.
+                        Go-Line currently operates across 50+ delivery zones in Saudi Arabia, with primary focus on Riyadh, Jeddah, and Dammam. We are continuously expanding our coverage to more cities.
                         <br />
                         <br />
-                        <b>
-                          Massa tincidunt nunc pulvinar sapien et ligula
-                          ullamcorper malesuada.
-                        </b>
+                        <b>To check if your area is covered, enter your postal code on our coverage map.</b>
                         <br />
                         <br />
-                        Non curabitur gravida arcu ac tortor dignissim convallis
-                        aenean. Odio pellentesque diam volutpat commodo sed
-                        egestas egestas. Sed sed risus pretium quam vulputate.
-                        Egestas egestas fringilla phasellus faucibus. Sit amet
-                        est placerat in egestas erat imperdiet sed. Varius sit
-                        amet mattis vulputate enim nulla aliquet.
+                        For inter-city and bulk shipments, contact our business team at partners@go-line.sa for a custom quote.
                       </p>
                       <i className="fa-solid fa-a" />
                     </div>
                     <div className="questions">
                       <i className="fa-solid fa-q" />
                       <h6>
-                        Question 3. Mi proin sed libero enim sed faucibus turpis
-                        in. Tristique senectus et netus et malesuada fames ac
-                        turpis. Congue eu consequat ac felis. Fringilla urna
-                        porttitor rhoncus dolor purus non enim?
+                        Question 3. What happens if my delivery is late or the package is damaged?
                       </h6>
                     </div>
                     <div className="questions answer">
                       <p>
-                        - Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua; - Dis parturient montes nascetur
-                        ridiculus mus mauris. Metus vulputate eu scelerisque
-                        felis imperdiet. Sit amet massa vitae tortor; - Viverra
-                        accumsan in nisl nisi scelerisque eu ultrices vitae
-                        auctor. Quam vulputate dignissim suspendisse in est.
-                        Augue mauris augue neque gravida in fermentum et;
+                        Go-Line offers an SLA-backed on-time delivery guarantee. If a delivery is late due to our error, you will receive credit on your next order.
                         <br />
                         <br />
-                        Feugiat sed lectus vestibulum mattis. Sit amet luctus
-                        venenatis lectus magna fringilla. Viverra orci sagittis
-                        eu volutpat odio facilisis mauris. Porttitor leo a diam
-                        sollicitudin tempor id eu. Lobortis scelerisque
-                        fermentum dui faucibus in ornare quam viverra orci. Diam
-                        vulputate ut pharetra sit. Odio aenean sed adipiscing
-                        diam donec.
+                        For damaged packages, file a claim within 24 hours through your account dashboard. Our support team will review and resolve the case within 2 business days.
                       </p>
                       <i className="fa-solid fa-a" />
                     </div>
                     <div className="questions">
                       <i className="fa-solid fa-q" />
                       <h6>
-                        Question 4. Ullamcorper sit amet risus nullam eget felis
-                        eget. Ullamcorper a lacus vestibulum sed arcu non odio
-                        euismod. Quisque egestas diam in arcu cursus?
+                        Question 4. Can I schedule recurring deliveries for my business?
                       </h6>
                     </div>
                     <div className="questions answer">
                       <p>
-                        Posuere ac ut consequat semper. Pharetra diam sit amet
-                        nisl. Sed pulvinar proin gravida hendrerit lectus a.
-                        Sagittis vitae et leo duis ut diam quam. Turpis egestas
-                        maecenas pharetra convallis posuere. Tincidunt lobortis
-                        feugiat vivamus at augue eget arcu dictum. Ipsum dolor
-                        sit amet consectetur.
+                        Yes. Business accounts can set up recurring pickup schedules — daily, weekly, or on custom intervals. Our scheduler lets you define time windows, preferred drivers, and automatic notifications for each run.
                         <br />
                         <br />
-                        Nulla pharetra diam sit amet nisl suscipit adipiscing
-                        bibendum. Nulla porttitor massa id neque aliquam
-                        vestibulum morbi blandit cursus. Massa placerat duis
-                        ultricies lacus sed turpis tincidunt id aliquet. Mus
-                        mauris vitae ultricies leo integer malesuada.
+                        Contact our sales team to activate scheduled delivery on your account and get a volume discount.
                       </p>
                       <i className="fa-solid fa-a" />
                     </div>
@@ -252,62 +196,48 @@ const Faq = () => {
                     <div className="questions">
                       <i className="fa-solid fa-q" />
                       <h6>
-                        Question 1. Volutpat maecenas volutpat blandit aliquam
-                        etiam erat velit. Diam donec adipiscing tristique risus
-                        nec feugiat in fermentum posuere?
+                        Question 1. How does Go-Line real-time tracking work?
                       </h6>
                     </div>
                     <div className="questions answer">
                       <p>
-                        Quis ipsum suspendisse ultrices gravida dictum. Aliquam
-                        eleifend mi in nulla posuere sollicitudin aliquam
-                        ultrices. Ut sem nulla pharetra diam sit amet nisl
-                        suscipit. Diam vulputate ut pharetra sit amet aliquam id
-                        diam maecenas. Amet mauris commodo quis imperdiet massa
-                        tincidunt nunc pulvinar sapien.
+                        Every shipment is assigned a unique tracking ID upon pickup. You can monitor live location, estimated arrival time, and delivery status through your Go-Line dashboard or via the tracking link sent to your phone.
                         <br />
                         <br />
-                        Suspendisse ultrices gravida dictum fusce ut. Tempor
-                        commodo ullamcorper a lacus vestibulum sed. Risus at
-                        ultrices mi tempus imperdiet. Proin sagittis nisl
-                        rhoncus mattis rhoncus urna neque.
+                        Notifications are sent at key milestones: pickup confirmed, in transit, out for delivery, and delivered.
                       </p>
                       <i className="fa-solid fa-a" />
                     </div>
                     <div className="questions">
                       <i className="fa-solid fa-q" />
                       <h6>
-                        Question 2. Id neque aliquam vestibulum morbi. Integer
-                        vitae justo eget magna fermentum iaculis eu non diam.
-                        Nam libero justo laoreet sit amet cursus sit amet.
-                        Platea dictumst quisque sagittis purus sit amet volutpat
-                        consequat?
+                        Question 2. Can I integrate Go-Line's tracking API with my e-commerce platform?
                       </h6>
                     </div>
                     <div className="questions answer">
                       <p>
-                        Condimentum mattis pellentesque id nibh tortor id
-                        aliquet lectus. Massa id neque aliquam vestibulum morbi
-                        blandit cursus risus. Elementum sagittis vitae et leo
-                        duis ut diam quam. A cras semper auctor neque vitae
-                        tempus quam pellentesque. Cursus vitae congue mauris
-                        rhoncus aenean vel. Ut aliquam purus sit amet luctus
-                        venenatis lectus magna. Fringilla est ullamcorper eget
-                        nulla. Tempor id eu nisl nunc mi ipsum faucibus vitae.
+                        Yes. Go-Line provides a RESTful API that supports order creation, tracking, proof-of-delivery retrieval, and webhook notifications. Our integration documentation is available in the developer portal.
                         <br />
                         <br />
-                        <b>
-                          Massa tincidunt nunc pulvinar sapien et ligula
-                          ullamcorper malesuada.
-                        </b>
+                        <b>We support native plugins for Shopify, WooCommerce, and Magento.</b>
                         <br />
                         <br />
-                        Non curabitur gravida arcu ac tortor dignissim convallis
-                        aenean. Odio pellentesque diam volutpat commodo sed
-                        egestas egestas. Sed sed risus pretium quam vulputate.
-                        Egestas egestas fringilla phasellus faucibus. Sit amet
-                        est placerat in egestas erat imperdiet sed. Varius sit
-                        amet mattis vulputate enim nulla aliquet.
+                        For custom integrations, contact our technical team at tech@go-line.sa for onboarding assistance.
+                      </p>
+                      <i className="fa-solid fa-a" />
+                    </div>
+                    <div className="questions">
+                      <i className="fa-solid fa-q" />
+                      <h6>
+                        Question 3. Is my shipment data secure on the Go-Line platform?
+                      </h6>
+                    </div>
+                    <div className="questions answer">
+                      <p>
+                        All data transmitted through the Go-Line platform is encrypted using TLS 1.3. Shipment records, customer details, and delivery histories are stored on ISO 27001-certified cloud infrastructure.
+                        <br />
+                        <br />
+                        We comply with Saudi data protection regulations and do not share client data with third parties without consent.
                       </p>
                       <i className="fa-solid fa-a" />
                     </div>
@@ -328,93 +258,48 @@ const Faq = () => {
                     <div className="questions">
                       <i className="fa-solid fa-q" />
                       <h6>
-                        Question 1. Volutpat maecenas volutpat blandit aliquam
-                        etiam erat velit. Diam donec adipiscing tristique risus
-                        nec feugiat in fermentum posuere?
+                        Question 1. What pricing plans does Go-Line offer for businesses?
                       </h6>
                     </div>
                     <div className="questions answer">
                       <p>
-                        Quis ipsum suspendisse ultrices gravida dictum. Aliquam
-                        eleifend mi in nulla posuere sollicitudin aliquam
-                        ultrices. Ut sem nulla pharetra diam sit amet nisl
-                        suscipit. Diam vulputate ut pharetra sit amet aliquam id
-                        diam maecenas. Amet mauris commodo quis imperdiet massa
-                        tincidunt nunc pulvinar sapien.
+                        Go-Line offers three main plans: <b>Starter</b> (pay-per-delivery for small businesses), <b>Growth</b> (monthly volume bundles with discounted rates), and <b>Enterprise</b> (custom SLA-based contracts for high-volume shippers).
                         <br />
                         <br />
-                        Suspendisse ultrices gravida dictum fusce ut. Tempor
-                        commodo ullamcorper a lacus vestibulum sed. Risus at
-                        ultrices mi tempus imperdiet. Proin sagittis nisl
-                        rhoncus mattis rhoncus urna neque.
+                        All plans include real-time tracking, digital proof of delivery, and dedicated customer support. Contact our sales team for a tailored quote.
                       </p>
                       <i className="fa-solid fa-a" />
                     </div>
                     <div className="questions">
                       <i className="fa-solid fa-q" />
                       <h6>
-                        Question 2. Id neque aliquam vestibulum morbi. Integer
-                        vitae justo eget magna fermentum iaculis eu non diam.
-                        Nam libero justo laoreet sit amet cursus sit amet.
-                        Platea dictumst quisque sagittis purus sit amet volutpat
-                        consequat?
+                        Question 2. Are there any hidden fees or surcharges?
                       </h6>
                     </div>
                     <div className="questions answer">
                       <p>
-                        Condimentum mattis pellentesque id nibh tortor id
-                        aliquet lectus. Massa id neque aliquam vestibulum morbi
-                        blandit cursus risus. Elementum sagittis vitae et leo
-                        duis ut diam quam. A cras semper auctor neque vitae
-                        tempus quam pellentesque. Cursus vitae congue mauris
-                        rhoncus aenean vel. Ut aliquam purus sit amet luctus
-                        venenatis lectus magna. Fringilla est ullamcorper eget
-                        nulla. Tempor id eu nisl nunc mi ipsum faucibus vitae.
+                        No. Go-Line operates on a fully transparent pricing model. The price quoted at order placement is the final price — no fuel surcharges, no weekend fees, and no surprise charges.
                         <br />
                         <br />
-                        <b>
-                          Massa tincidunt nunc pulvinar sapien et ligula
-                          ullamcorper malesuada.
-                        </b>
+                        <b>Volume discounts apply automatically once your monthly shipment count crosses 100 deliveries.</b>
                         <br />
                         <br />
-                        Non curabitur gravida arcu ac tortor dignissim convallis
-                        aenean. Odio pellentesque diam volutpat commodo sed
-                        egestas egestas. Sed sed risus pretium quam vulputate.
-                        Egestas egestas fringilla phasellus faucibus. Sit amet
-                        est placerat in egestas erat imperdiet sed. Varius sit
-                        amet mattis vulputate enim nulla aliquet.
+                        For custom zone pricing or inter-city rates, contact partners@go-line.sa.
                       </p>
                       <i className="fa-solid fa-a" />
                     </div>
                     <div className="questions">
                       <i className="fa-solid fa-q" />
                       <h6>
-                        Question 3. Mi proin sed libero enim sed faucibus turpis
-                        in. Tristique senectus et netus et malesuada fames ac
-                        turpis. Congue eu consequat ac felis. Fringilla urna
-                        porttitor rhoncus dolor purus non enim?
+                        Question 3. How do I become a Go-Line business partner?
                       </h6>
                     </div>
                     <div className="questions answer">
                       <p>
-                        - Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua; - Dis parturient montes nascetur
-                        ridiculus mus mauris. Metus vulputate eu scelerisque
-                        felis imperdiet. Sit amet massa vitae tortor; - Viverra
-                        accumsan in nisl nisi scelerisque eu ultrices vitae
-                        auctor. Quam vulputate dignissim suspendisse in est.
-                        Augue mauris augue neque gravida in fermentum et;
+                        Businesses can apply through our Become a Partner page. Fill in your company details, expected shipment volume, and preferred service type. Our partnerships team will review your application within 2 business days.
                         <br />
                         <br />
-                        Feugiat sed lectus vestibulum mattis. Sit amet luctus
-                        venenatis lectus magna fringilla. Viverra orci sagittis
-                        eu volutpat odio facilisis mauris. Porttitor leo a diam
-                        sollicitudin tempor id eu. Lobortis scelerisque
-                        fermentum dui faucibus in ornare quam viverra orci. Diam
-                        vulputate ut pharetra sit. Odio aenean sed adipiscing
-                        diam donec.
+                        Approved partners receive a dedicated account manager, priority support, and access to our business analytics dashboard.
                       </p>
                       <i className="fa-solid fa-a" />
                     </div>

@@ -27,19 +27,20 @@ const BecomePartner = () => {
                     </Link>
                   </li>
                 </ul>
-                <h2>Want to join partnership?</h2>
+                <h2>Join the Go-Line network today</h2>
                 <p>
-                  Egestas sed tempus urna et pharetra pharetra massa. Fermentum
-                  posuere urna nec tincidunt praesent semper.
+                  Whether you&apos;re a delivery driver or a business owner —
+                  Go-Line has a place for you. Apply now and start earning or
+                  growing.
                 </p>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="join-courier">
-                <h3>Join Courier</h3>
+                <h3>Apply as a Driver or Business Partner</h3>
                 <p>
-                  Egestas sed tempus urna et pharetra pharetra massa. Fermentum
-                  posuere urna nec tincidunt praesent semper.
+                  Fill in the form below and our team will review your
+                  application and get back to you within 48 hours.
                 </p>
                 <form
                   onSubmit={(e) => e.preventDefault()}
@@ -90,11 +91,11 @@ const BecomePartner = () => {
               data-aos-duration={400}
             >
               <div className="benefit-text">
-                <h2>Benefits you get with Quickeat</h2>
+                <h2>Benefits of joining Go-Line</h2>
                 <p>
-                  Suspendisse in est ante in. Duis at consectetur lorem donec
-                  massa. Eget lorem dolor sed viverra ipsum. Aliquam id diam
-                  maecenas ultricies mi. Nulla facilisi morbi tempus iaculis.
+                  Our partners enjoy competitive pay, flexible hours, and full
+                  support from our dedicated operations team. Join hundreds of
+                  drivers and businesses already growing with Go-Line.
                 </p>
               </div>
             </div>
@@ -113,12 +114,11 @@ const BecomePartner = () => {
               <div className="team-description">
                 <h4>
                   <i className="fa-solid fa-people-group" />
-                  Friendly Team
+                  Supportive Team
                 </h4>
                 <p>
-                  Consequat semper viverra nam libero justo laoreet sit.
-                  Consequat semper viverra nam libero justo laoreet sit amet
-                  cursus. Morbi tincidunt ornare .
+                  Our operations and driver support teams are available 7 days
+                  a week to assist with any questions or delivery issues.
                 </p>
               </div>
             </div>
@@ -134,9 +134,9 @@ const BecomePartner = () => {
                   Flexible Schedule
                 </h4>
                 <p>
-                  Maecenas ultricies mi eget mauris pharetra. Sed ullamcorper
-                  morbi tincidunt ornare massa eget. Gravida neque convallis a
-                  cras semper.
+                  Drivers choose their own working hours. Work full-time or
+                  part-time — the choice is yours. Our platform makes it easy
+                  to manage deliveries on your terms.
                 </p>
               </div>
             </div>
@@ -149,12 +149,10 @@ const BecomePartner = () => {
               <div className="team-description">
                 <h4>
                   <i className="fa-solid fa-briefcase" />
-                  Official Employment
+                  Dedicated Account Manager
                 </h4>
                 <p>
-                  Dignissim cras tincidunt lobortis feugiat vivamus at augue
-                  eget. Cursus risus at ultrices mi tempus imperdiet. Non diam
-                  phasellus vestibulum.
+                  Every business partner gets a personal account manager to handle onboarding, billing, and daily operational support.
                 </p>
               </div>
             </div>
@@ -167,12 +165,10 @@ const BecomePartner = () => {
               <div className="team-description end">
                 <h4>
                   <i className="fa-solid fa-money-bill-1-wave" />
-                  Stable Income
+                  Competitive Revenue Share
                 </h4>
                 <p>
-                  Dui sapien eget mi proin sed. Nibh nisl condimentum id
-                  venenatis a. Vulputate eu scelerisque felis imperdiet proin
-                  fermentum leo.{" "}
+                  Drivers earn competitive per-delivery rates with weekly payouts. Business partners benefit from volume pricing and invoice-based billing.
                 </p>
               </div>
             </div>
@@ -185,12 +181,10 @@ const BecomePartner = () => {
               <div className="team-description end">
                 <h4>
                   <i className="fa-solid fa-arrow-up-right-dots" />
-                  Career Growth
+                  Business Growth Tools
                 </h4>
                 <p>
-                  Euismod quis viverra nibh cras pulvinar mattis nunc sed
-                  blandit. Neque viverra justo nec ultrices dui sapien. Volutpat
-                  est velit egestas.
+                  Access analytics dashboards, delivery reports, and performance insights to optimize your shipping strategy and reduce costs.
                 </p>
               </div>
             </div>
@@ -203,12 +197,10 @@ const BecomePartner = () => {
               <div className="team-description end">
                 <h4>
                   <i className="fa-solid fa-folder-open" />
-                  Full Insurance
+                  End-to-End Support
                 </h4>
                 <p>
-                  Cras semper auctor neque vitae tempus quam. Sed viverra tellus
-                  in hac habitasse platea. Sagittis aliquam malesuada bibendum
-                  arcu vitae.
+                  From API integration to SLA management, our team provides full technical and operational support to keep your deliveries running smoothly.
                 </p>
               </div>
             </div>
@@ -235,27 +227,24 @@ const BecomePartner = () => {
               data-aos-duration={400}
             >
               <div className="join-the">
-                <h2>Frequently asked questions</h2>
+                <h2>Common questions about joining Go-Line</h2>
                 <p>
-                  Ultricies lacus sed turpis tincidunt id aliquet risus feugiat.
-                  Mauris augue neque gravida in fermentum et sollicitudin. Amet
-                  est placerat in egestas erat imperdiet.
+                  Not sure how to get started? Here are quick answers to the most common questions from drivers and business partners.
                 </p>
               </div>
               <div className="counter-blog">
                 <div className="counter-img-data">
-                  <h2>74</h2>
+                  <h2>500+</h2>
                   <span>
-                    Couriers <br />
-                    in Your city
+                    Active<br />
+                    Drivers
                   </span>
                 </div>
                 <div className="counter-img-data">
-                  <h2>12</h2>
+                  <h2>50+</h2>
                   <span>
-                    Best
-                    <br />
-                    Restaurants
+                    Delivery<br />
+                    Zones
                   </span>
                 </div>
               </div>
@@ -276,12 +265,11 @@ const BecomePartner = () => {
                 <img alt="man" src="assets/img/news-1.jpg" />
                 <div className="quickeat">
                   {" "}
-                  <a href="#">news</a> <a href="#">quickeat</a>
+                  <a href="#">logistics</a> <a href="#">go-line</a>
                 </div>
-                <h3>We Have Received An Award For The Quality Of Our Work</h3>
+                <h3>Go-Line Expands Coverage to 10 New Cities</h3>
                 <p>
-                  Donec adipiscing tristique risus nec feugiat in fermentum.
-                  Sapien eget mi proin sed...
+                  We are proud to announce our expansion into 10 additional cities across the Kingdom, bringing fast last-mile delivery to more businesses than ever.
                 </p>{" "}
                 <Link href="/single-blog">
                   Read More
@@ -291,19 +279,19 @@ const BecomePartner = () => {
                   <li>
                     <h6>
                       <i className="fa-solid fa-user" />
-                      by Quickeat
+                      by Go-Line
                     </h6>
                   </li>
                   <li>
                     <h6>
                       <i className="fa-regular fa-calendar-days" />
-                      01.Jan. 2022
+                      15. Mar. 2026
                     </h6>
                   </li>
                   <li>
                     <h6>
                       <i className="fa-solid fa-eye" />
-                      132
+                      248
                     </h6>
                   </li>
                 </ul>
@@ -319,13 +307,11 @@ const BecomePartner = () => {
                 <img alt="man" src="assets/img/news-2.jpg" />
                 <div className="quickeat">
                   {" "}
-                  <a href="#">news</a> <a href="#">quickeat</a>
+                  <a href="#">partners</a> <a href="#">go-line</a>
                 </div>
-                <h3>With Quickeat you can order food for the whole day</h3>
+                <h3>How Businesses Are Cutting Shipping Costs with Go-Line</h3>
                 <p>
-                  Nec tincidunt praesent semper feugiat nibh. Feugiat in ante
-                  metus dictum. Sapien nec sagittis aliquam malesuada bibendum
-                  arcu vitae. Non enim praesent elementum facilisis...
+                  Our business partners report up to 30% savings on delivery costs after switching to Go-Line's consolidated shipping model...
                 </p>{" "}
                 <Link href="/single-blog">
                   Read More
@@ -335,19 +321,19 @@ const BecomePartner = () => {
                   <li>
                     <h6>
                       <i className="fa-solid fa-user" />
-                      by Quickeat
+                      by Go-Line
                     </h6>
                   </li>
                   <li>
                     <h6>
                       <i className="fa-regular fa-calendar-days" />
-                      01.Jan. 2022
+                      02. Feb. 2026
                     </h6>
                   </li>
                   <li>
                     <h6>
                       <i className="fa-solid fa-eye" />
-                      132
+                      187
                     </h6>
                   </li>
                 </ul>
@@ -363,13 +349,11 @@ const BecomePartner = () => {
                 <img alt="man" src="assets/img/news-3.jpg" />
                 <div className="quickeat">
                   {" "}
-                  <a href="#">news</a> <a href="#">quickeat</a>
+                  <a href="#">drivers</a> <a href="#">go-line</a>
                 </div>
-                <h3>127+ Couriers On Our Team!</h3>
+                <h3>500+ Active Drivers Now on the Go-Line Network!</h3>
                 <p>
-                  Pulvinar neque laoreet suspendisse interdum consectetur libero
-                  id faucibus nisl. Aliquam ultrices sagittis orci a scelerisque
-                  purus semper eget duis. Viverra vitae congue eu consequat...
+                  Our driver community has surpassed 500 active members, providing faster pickups and broader coverage across all major zones...
                 </p>{" "}
                 <Link href="/single-blog">
                   Read More
@@ -379,19 +363,19 @@ const BecomePartner = () => {
                   <li>
                     <h6>
                       <i className="fa-solid fa-user" />
-                      by Quickeat
+                      by Go-Line
                     </h6>
                   </li>
                   <li>
                     <h6>
                       <i className="fa-regular fa-calendar-days" />
-                      01.Jan. 2022
+                      10. Jan. 2026
                     </h6>
                   </li>
                   <li>
                     <h6>
                       <i className="fa-solid fa-eye" />
-                      132
+                      312
                     </h6>
                   </li>
                 </ul>

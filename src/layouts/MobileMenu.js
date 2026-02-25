@@ -14,19 +14,19 @@ const MobileMenu = () => {
       <li>
         <Link href="about">About Us</Link>
       </li>
-      <li className={`menu-item-has-children ${activeLi("Restaurants")}`}>
-        <a href="#" onClick={() => activeMenuSet("Restaurants")}>
-          Restaurants
+      <li className={`menu-item-has-children ${activeLi("Services")}`}>
+        <a href="#" onClick={() => activeMenuSet("Services")}>
+          Services
         </a>
         <ul className="sub-menu">
           <li>
-            <Link href="restaurants">Restaurants</Link>
+            <Link href="services">All Services</Link>
           </li>
           <li>
-            <Link href="restaurant-card">Restaurant Card</Link>
+            <Link href="pricing-table">Pricing</Link>
           </li>
           <li>
-            <Link href="checkout">Checkout</Link>
+            <Link href="become-partner">Become A Partner</Link>
           </li>
         </ul>
       </li>
@@ -39,19 +39,10 @@ const MobileMenu = () => {
             <Link href="blog">Blog</Link>
           </li>
           <li>
-            <Link href="single-blog">Single Blog</Link>
-          </li>
-          <li>
-            <Link href="services">Services</Link>
+            <Link href="single-blog">Single Article</Link>
           </li>
           <li>
             <Link href="faq">FAQ</Link>
-          </li>
-          <li>
-            <Link href="pricing-table">Pricing Table</Link>
-          </li>
-          <li>
-            <Link href="become-partner">Become A Partner</Link>
           </li>
           <li>
             <Link href="404">404</Link>
@@ -59,7 +50,7 @@ const MobileMenu = () => {
         </ul>
       </li>
       <li>
-        <Link href="contact">contacts</Link>
+        <Link href="contacts">Contacts</Link>
       </li>
     </ul>
   );

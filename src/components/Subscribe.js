@@ -23,13 +23,13 @@ const Subscribe = () => {
             data-aos-duration={400}
           >
             <div className="get-the-menu">
-              <h2>Get the menu of your favorite restaurants every day</h2>
+              <h2>Stay updated with Go-Line delivery news and offers</h2>
               <form onSubmit={(e) => e.preventDefault()}>
                 <i className="fa-regular fa-bell" />
                 <input
                   type="text"
                   name="email"
-                  placeholder="Enter email address"
+                  placeholder="Enter your email address"
                 />
                 <button className="button button-2">Subscribe</button>
               </form>

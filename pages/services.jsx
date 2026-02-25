@@ -28,14 +28,14 @@ const Services = () => {
                     </Link>
                   </li>
                 </ul>
-                <h2>Service shows good taste</h2>
+                <h2>Delivery services that drive your business forward</h2>
                 <p>
-                  Mauris nunc congue nisi vitae suscipit tellus mauris. Ac
-                  tincidunt vitae semper quis lectus. Sollicitudin ac orci
-                  phasellus egestas tellus.
+                  From express shipments to bulk logistics — Go-Line offers
+                  flexible, scalable delivery solutions built for modern
+                  businesses.
                 </p>{" "}
-                <Link href="/restaurants" className="button button-2">
-                  Select Restaurant
+                <Link href="/contacts" className="button button-2">
+                  Get a Quote
                 </Link>
               </div>
             </div>
@@ -49,31 +49,31 @@ const Services = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                     <div className="counter-img">
-                      <img alt="man" src="/assets/img/man-1.jpg" />
+                      <img alt="driver" src="/assets/img/man-1.jpg" />
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                     <div className="counter-img-data">
-                      <h2>1K+</h2>
+                      <h2>5K+</h2>
                       <span>
-                        Food
+                        Packages
                         <br /> Delivered
                       </span>
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                     <div className="counter-img-data black">
-                      <h2>12</h2>
+                      <h2>50+</h2>
                       <span>
-                        Best
+                        Delivery
                         <br />
-                        Restaurants
+                        Zones
                       </span>
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                     <div className="counter-img">
-                      <img alt="man" src="/assets/img/man-1.jpg" />
+                      <img alt="team" src="/assets/img/man-3.jpg" />
                     </div>
                   </div>
                 </div>
@@ -93,12 +93,9 @@ const Services = () => {
               data-aos-duration={300}
             >
               <div className="services-info">
-                <h2>Make you easier and happier</h2>
+                <h2>Everything your business needs to ship smarter</h2>
                 <p>
-                  Risus quis varius quam quisque id diam vel quam elementum.
-                  Luctus venenatis lectus magna fringilla urna porttitor rhoncus
-                  dolor. Mauris pharetra et ultrices neque. Id ornare arcu odio
-                  ut sem. Sed vulputate mi sit amet mauris.
+                  Go-Line delivers flexible, scalable shipping solutions — from same-day express to bulk logistics. We handle the last mile so you can focus on growing your business.
                 </p>
               </div>
             </div>
@@ -109,18 +106,17 @@ const Services = () => {
               data-aos-duration={400}
             >
               <div className="services-card-style">
-                <i className="fa-regular fa-clock" />
+                <i className="fa-solid fa-bolt" />
                 <h4>
                   {" "}
                   <a href="#">
-                    Save
+                    Express
                     <br />
-                    Your Time
+                    Delivery
                   </a>
                 </h4>
                 <p>
-                  Turpis cursus in hac habitasse platea. Magna fringilla urna
-                  porttitor dolor purus non enim. Molestie nunc non blandit.
+                  Same-hour and next-hour delivery available across all major zones. Ideal for urgent, time-sensitive shipments.
                 </p>
               </div>
             </div>
@@ -131,18 +127,17 @@ const Services = () => {
               data-aos-duration={500}
             >
               <div className="services-card-style">
-                <i className="fa-solid fa-plate-wheat" />
+                <i className="fa-solid fa-calendar-check" />
                 <h4>
                   {" "}
                   <a href="#">
-                    Variety
+                    Scheduled
                     <br />
-                    Food
+                    Runs
                   </a>
                 </h4>
                 <p>
-                  Tempor orci dapibus ultrices in iaculis nunc sed augue. Sed
-                  euismod nisi porta lorem mollis aliquam ut porttitor leo.
+                  Plan recurring pickups and deliveries on your schedule — daily, weekly, or custom intervals to fit your operations.
                 </p>
               </div>
             </div>
@@ -153,18 +148,17 @@ const Services = () => {
               data-aos-duration={700}
             >
               <div className="services-card-style">
-                <i className="fa-solid fa-utensils" />
+                <i className="fa-solid fa-boxes-stacked" />
                 <h4>
                   {" "}
                   <a href="#">
-                    Free
+                    Bulk
                     <br />
-                    Delivery
+                    Logistics
                   </a>
                 </h4>
                 <p>
-                  Cras fermentum odio eu feugiat pretium nibh ipsum. Ut faucibus
-                  pulvinar elementum integer .
+                  Manage large-volume shipments with ease. Our bulk logistics solutions offer competitive rates and dedicated handling.
                 </p>
               </div>
             </div>
@@ -175,18 +169,17 @@ const Services = () => {
               data-aos-duration={800}
             >
               <div className="services-card-style">
-                <i className="fa-solid fa-tag" />
+                <i className="fa-solid fa-satellite-dish" />
                 <h4>
                   {" "}
                   <a href="#">
-                    Regular
+                    Live
                     <br />
-                    Discounts
+                    Tracking
                   </a>
                 </h4>
                 <p>
-                  Morbi leo urna molestie at elementum eu facilisis sed odio.
-                  Mattis nunc sed blandit libero volutpat sed cras ornare.
+                  Track every shipment in real time. Clients and recipients receive instant updates at every delivery milestone.
                 </p>
               </div>
             </div>
@@ -197,23 +190,23 @@ const Services = () => {
               data-aos-duration={1000}
             >
               <div className="services-cards-text">
-                <h2>Best quality Food and Restaurant</h2>
+                <h2>Trusted by 200+ business partners</h2>
                 <ul className="paragraph">
                   <li>
                     <i className="fa-solid fa-circle-check" />
-                    <h5>Duis ultricies lacus sed turpis tincidunt;</h5>
+                    <h5>Dedicated account manager for every client;</h5>
                   </li>
                   <li>
                     <i className="fa-solid fa-circle-check" />
-                    <h5>Lectus vestibulum mattis ullamcorper;</h5>
+                    <h5>Real-time delivery tracking and reporting;</h5>
                   </li>
                   <li>
                     <i className="fa-solid fa-circle-check" />
-                    <h5>Massa tempor nec feugiat nisl pretium;</h5>
+                    <h5>Transparent pricing with no hidden fees;</h5>
                   </li>
                   <li>
                     <i className="fa-solid fa-circle-check" />
-                    <h5>velit sed ullamcorper morbi tincidunt ornare.</h5>
+                    <h5>SLA-backed on-time delivery guarantee.</h5>
                   </li>
                 </ul>
               </div>
@@ -232,8 +225,7 @@ const Services = () => {
           >
             <h2>How it works</h2>
             <p>
-              Magna sit amet purus gravida quis blandit turpis cursus. Venenatis
-              tellus in metus vulputate eu scelerisque felis.
+              Shipping with Go-Line is fast and simple. Place your order in minutes and we handle the rest — pickup, delivery, and real-time updates all the way.
             </p>
           </div>
           <div className="row ">
@@ -245,11 +237,9 @@ const Services = () => {
             >
               <div className="work-card service">
                 <img alt="img" src="/assets/img/Illustration-1.png" />
-                <h4>Select Restaurant</h4>
+                <h4>Place Your Order</h4>
                 <p>
-                  Non enim praesent elementum facilisis leo vel fringilla.
-                  Lectus proin nibh nisl condimentum id. Quis varius quam
-                  quisque id diam vel.
+                  Submit your shipment details online or via our app. Choose your delivery speed — express, same-day, or scheduled — and confirm pickup time.
                 </p>
               </div>
             </div>
@@ -261,11 +251,9 @@ const Services = () => {
             >
               <div className="work-card service">
                 <img alt="img" src="/assets/img/Illustration-2.png" />
-                <h4>Select menu</h4>
+                <h4>We Pick It Up</h4>
                 <p>
-                  Eu mi bibendum neque egestas congue quisque. Nulla facilisi
-                  morbi tempus iaculis lectus urna id volutpat lacus. Odio ut
-                  sem nulla{" "}
+                  Our driver arrives at your location on time, verifies the package, and assigns a live tracking number for full visibility.
                 </p>
               </div>
             </div>
@@ -277,11 +265,9 @@ const Services = () => {
             >
               <div className="work-card service">
                 <img alt="img" src="/assets/img/illustration-3.png" />
-                <h4>Wait for delivery</h4>
+                <h4>Fast Delivery</h4>
                 <p>
-                  Nunc lobortis mattis aliquam faucibus. Nibh ipsum consequat
-                  nisl vel pretium lectus quam id leo. A scelerisque purus
-                  semper eget.
+                  Your shipment is delivered on time with a digital proof of delivery. Automatic notifications keep both sender and recipient informed.
                 </p>
               </div>
             </div>
@@ -301,11 +287,11 @@ const Services = () => {
               <div className="sit-at-img">
                 <img alt="man" src="/assets/img/man-3.jpg" />
                 <div className="counter-img-data">
-                  <h2>976</h2>
+                  <h2>5K+</h2>
                   <span>
-                    Satisfied
+                    Packages
                     <br />
-                    Customer
+                    Delivered
                   </span>
                 </div>
               </div>
@@ -317,50 +303,49 @@ const Services = () => {
               data-aos-duration={400}
             >
               <div className="sit-at-home-description">
-                <h2>Sit at Home We Will Take Care Your Order</h2>
+                <h2>Your Business, Delivered — Every Time</h2>
                 <p>
-                  Magna sit amet purus gravida quis blandit turpis cursus.
-                  Venenatis tellus in metus vulputate eu scelerisque felis.
+                  Go-Line offers comprehensive last-mile delivery for businesses of all sizes. Reliable, transparent, and built around your schedule.
                 </p>
                 <ul className="food-dishes">
                   <li>
                     {" "}
                     <a href="#">
-                      <i className="fa-solid fa-burger" />
-                      Burgers
+                      <i className="fa-solid fa-bolt" />
+                      Express
                     </a>
                   </li>
                   <li>
                     {" "}
                     <a href="#">
-                      <i className="fa-solid fa-drumstick-bite" />
-                      Chicken
+                      <i className="fa-solid fa-sun" />
+                      Same-Day
                     </a>
                   </li>
                   <li>
                     {" "}
                     <a href="#">
-                      <i className="fa-solid fa-cheese" />
-                      Steaks
+                      <i className="fa-solid fa-boxes-stacked" />
+                      Bulk
                     </a>
                   </li>
                   <li>
                     {" "}
                     <a href="#">
-                      <i className="fa-solid fa-pizza-slice" />
-                      Pizza
+                      <i className="fa-solid fa-calendar-check" />
+                      Scheduled
                     </a>
                   </li>
                   <li>
                     {" "}
                     <a href="#">
-                      <i className="fa-solid fa-fish" />
-                      Pizza
+                      <i className="fa-solid fa-satellite-dish" />
+                      Tracked
                     </a>
                   </li>
                 </ul>{" "}
-                <Link href="/restaurant-card" className="button button-2">
-                  Order Now
+                <Link href="/contacts" className="button button-2">
+                  Get a Quote
                 </Link>
               </div>
             </div>

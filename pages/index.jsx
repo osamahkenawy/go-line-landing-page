@@ -19,21 +19,18 @@ const Index = () => {
               data-aos-duration={300}
             >
               <div className="restaurant">
-                <h1>The Best restaurants in your home</h1>
+                <h1>Fast, Reliable Last-Mile Delivery Service</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
+                  Go-Line connects businesses with trusted couriers —
+                  delivering packages across 50+ zones with speed, safety, and
+                  full tracking visibility.
                 </p>
                 <div className="nice-select-one">
-                  <select className="nice-select Advice">
-                    <option>Choose a Restaurant</option>
-                    <option>Choose a Restaurant 1</option>
-                    <option>Choose a Restaurant 2</option>
-                    <option>Choose a Restaurant 3</option>
-                    <option>Choose a Restaurant 4</option>
-                  </select>{" "}
-                  <Link href="checkout" className="button button-2">
-                    Order Now
+                  <Link href="contacts" className="button button-2">
+                    Get a Quote
+                  </Link>{" "}
+                  <Link href="services" className="button button-2" style={{ marginLeft: 12 }}>
+                    Our Services <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </div>
               </div>
@@ -49,22 +46,22 @@ const Index = () => {
                 <div className="wilmington">
                   <img alt="img" src="assets/img/photo-2.jpg" />
                   <div>
-                    <p>Restaurant of the Month</p>
-                    <h6>The Wilmington</h6>
+                    <p>Delivery of the Day</p>
+                    <h6>Express Shipment</h6>
                     <div>
                       <i className="fa-solid fa-star" />
                       <i className="fa-solid fa-star" />
                       <i className="fa-solid fa-star" />
                       <i className="fa-solid fa-star" />
-                      <i className="fa-regular fa-star-half-stroke" />
+                      <i className="fa-solid fa-star" />
                     </div>
                   </div>
                 </div>
                 <div className="wilmington location-restaurant">
                   <i className="fa-solid fa-location-dot" />
                   <div>
-                    <h6>12 Restaurant</h6>
-                    <p>In Your city</p>
+                    <h6>50+ Zones</h6>
+                    <p>Covered Nationwide</p>
                   </div>
                 </div>
               </div>
@@ -81,11 +78,10 @@ const Index = () => {
             data-aos-delay={200}
             data-aos-duration={300}
           >
-            <h2>How it works</h2>
+            <h2>How It Works</h2>
             <p>
-              Magna sit amet purus gravida quis blandit turpis cursus. Venenatis
-              tellus in
-              <br /> metus vulputate eu scelerisque felis.
+              Shipping with Go-Line is simple and transparent. From pickup to
+              <br /> delivery — every step tracked in real time.
             </p>
           </div>
           <div className="row ">
@@ -98,12 +94,12 @@ const Index = () => {
               <div className="work-card">
                 <img alt="img" src="assets/img/Illustration-1.png" />
                 <h4>
-                  <span>01</span> Select Restaurant
+                  <span>01</span> Place Your Order
                 </h4>
                 <p>
-                  Non enim praesent elementum facilisis leo vel fringilla.
-                  Lectus proin nibh nisl condimentum id. Quis varius quam
-                  quisque id diam vel.
+                  Submit your delivery request online or via phone. Tell us the
+                  pickup location, destination, and package details — we handle
+                  the rest.
                 </p>
               </div>
             </div>
@@ -116,12 +112,12 @@ const Index = () => {
               <div className="work-card">
                 <img alt="img" src="assets/img/Illustration-2.png" />
                 <h4>
-                  <span>02</span> Select menu
+                  <span>02</span> We Pick It Up
                 </h4>
                 <p>
-                  Eu mi bibendum neque egestas congue quisque. Nulla facilisi
-                  morbi tempus iaculis urna id volutpat lacus. Odio ut sem nulla
-                  pharetra diam sit amet.
+                  Our trained courier picks up your package from your location
+                  promptly. We scan, verify, and secure every shipment before
+                  dispatch.
                 </p>
               </div>
             </div>
@@ -134,19 +130,19 @@ const Index = () => {
               <div className="work-card">
                 <img alt="img" src="assets/img/illustration-3.png" />
                 <h4>
-                  <span>03</span> Wait for delivery
+                  <span>03</span> Fast Delivery
                 </h4>
                 <p>
-                  Nunc lobortis mattis aliquam faucibus. Nibh ipsum consequat
-                  nisl vel pretium lectus quam id leo. A scelerisque purus
-                  semper eget. Tincidunt arcu non.
+                  Your package is delivered to its destination with real-time
+                  tracking updates. Recipient confirms delivery and you get an
+                  instant notification.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* best-restaurants */}
+      {/* why-choose-us */}
       <section
         className="best-restaurants gap"
         style={{ background: "#fcfcfc" }}
@@ -160,10 +156,10 @@ const Index = () => {
               data-aos-duration={300}
             >
               <div className="city-restaurants">
-                <h2>12 Best Restaurants in Your City</h2>
+                <h2>Why Businesses Choose Go-Line</h2>
                 <p>
-                  Magna sit amet purus gravida quis blandit turpis cursus.
-                  Venenatis tellus in metus vulputate.
+                  We combine technology, trained couriers, and deep local
+                  knowledge to deliver results you can count on.
                 </p>
               </div>
             </div>
@@ -176,27 +172,25 @@ const Index = () => {
               <div className="logos-card">
                 <img alt="logo" src="assets/img/logos-2.jpg" />
                 <div className="cafa">
-                  <h4>
-                    <Link href="restaurant-card">Kennington Lane Cafe</Link>
-                  </h4>
+                  <h4>Real-Time Tracking</h4>
                   <div>
                     <i className="fa-solid fa-star" />
                     <i className="fa-solid fa-star" />
                     <i className="fa-solid fa-star" />
                     <i className="fa-solid fa-star" />
-                    <i className="fa-regular fa-star" />
+                    <i className="fa-solid fa-star" />
                   </div>
                   <div className="cafa-button">
                     {" "}
-                    <a href="#">american</a> <a href="#">steakhouse</a>{" "}
+                    <a href="#">GPS Tracking</a> <a href="#">Live Updates</a>{" "}
                     <a className="end" href="#">
-                      seafood
+                      Notifications
                     </a>
                   </div>
                   <p>
-                    Non enim praesent elementum facilisis leo vel fringilla.
-                    Lectus proin nibh nisl condimentum id. Quis varius quam
-                    quisque id diam vel.
+                    Track every shipment in real time with our smart dashboard.
+                    Get instant SMS and email notifications at every delivery
+                    milestone.
                   </p>
                 </div>
               </div>
@@ -210,9 +204,7 @@ const Index = () => {
               <div className="logos-card two">
                 <img alt="logo" src="assets/img/logos-1.jpg" />
                 <div className="cafa">
-                  <h4>
-                    <Link href="restaurant-card">The Wilmington</Link>
-                  </h4>
+                  <h4>Nationwide Coverage</h4>
                   <div>
                     <i className="fa-solid fa-star" />
                     <i className="fa-solid fa-star" />
@@ -222,15 +214,14 @@ const Index = () => {
                   </div>
                   <div className="cafa-button">
                     {" "}
-                    <a href="#">american</a> <a href="#">steakhouse</a>{" "}
+                    <a href="#">50+ Zones</a> <a href="#">Same-Day</a>{" "}
                     <a className="end" href="#">
-                      seafood
+                      Cross-City
                     </a>
                   </div>
                   <p>
-                    Vulputate enim nulla aliquet porttitor lacus luctus.
-                    Suscipit adipiscing bibendum est ultricies integer. Sed
-                    adipiscing diam donec adipiscing tristique.
+                    Our delivery network spans 50+ zones across the country.
+                    Whether local or cross-city, we get it there fast.
                   </p>
                 </div>
               </div>
@@ -244,9 +235,7 @@ const Index = () => {
               <div className="logos-card three">
                 <img alt="logo" src="assets/img/logos-3.jpg" />
                 <div className="cafa">
-                  <h4>
-                    <Link href="restaurant-card">Kings Arms</Link>
-                  </h4>
+                  <h4>Dedicated Support</h4>
                   <div>
                     <i className="fa-solid fa-star" />
                     <i className="fa-solid fa-star" />
@@ -256,23 +245,22 @@ const Index = () => {
                   </div>
                   <div className="cafa-button">
                     {" "}
-                    <a href="#">healthy</a> <a href="#">steakhouse</a>{" "}
+                    <a href="#">24/7 Support</a> <a href="#">Dedicated Agent</a>{" "}
                     <a className="end" href="#">
-                      vegetarian
+                      Fast Response
                     </a>
                   </div>
                   <p>
-                    Tortor at risus viverra adipiscing at in tellus. Cras semper
-                    auctor neque vitae tempus. Dui accumsan sit amet nulla
-                    facilisi. Sed adipiscing diam donec adipiscing tristique.
+                    Our customer support team is available around the clock to
+                    assist with any delivery concerns or urgent requests.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div className="button-gap">
-            <Link href="restaurants" className="button button-2 non">
-              See All
+            <Link href="services" className="button button-2 non">
+              All Services
               <i className="fa-solid fa-arrow-right" />
             </Link>
           </div>
@@ -294,16 +282,16 @@ const Index = () => {
               <div className="food-photo-section">
                 <img alt="img" src="assets/img/photo-3.png" />{" "}
                 <a href="#" className="one">
-                  <i className="fa-solid fa-burger" />
-                  Burgers
+                  <i className="fa-solid fa-bolt" />
+                  Express
                 </a>{" "}
                 <a href="#" className="two">
-                  <i className="fa-solid fa-cheese" />
-                  Steaks
+                  <i className="fa-solid fa-calendar-day" />
+                  Same-Day
                 </a>{" "}
                 <a href="#" className="three">
-                  <i className="fa-solid fa-pizza-slice" />
-                  Pizza
+                  <i className="fa-solid fa-boxes-stacked" />
+                  Bulk
                 </a>
               </div>
             </div>
@@ -314,14 +302,14 @@ const Index = () => {
               data-aos-duration={400}
             >
               <div className="food-content-section">
-                <h2>Food from your favorite restaurants to your table</h2>
+                <h2>Delivery solutions tailored for your business needs</h2>
                 <p>
-                  Pretium lectus quam id leo in vitae turpis massa sed. Lorem
-                  donec massa sapien faucibus et molestie. Vitae elementum
-                  curabitur vitae nunc.
+                  Whether you ship 10 parcels or 10,000 — Go-Line has a plan
+                  that fits. Scale your delivery operations effortlessly with
+                  our flexible service tiers.
                 </p>{" "}
-                <Link href="checkout" className="button button-2">
-                  Order Now
+                <Link href="services" className="button button-2">
+                  Explore Services
                 </Link>
               </div>
             </div>
@@ -339,7 +327,7 @@ const Index = () => {
               data-aos-duration={300}
             >
               <div>
-                <h2>Service shows good taste.</h2>
+                <h2>Delivering excellence, every shipment.</h2>
               </div>
             </div>
             <div
@@ -351,15 +339,15 @@ const Index = () => {
               <div className="count-time">
                 <h2
                   className="timer count-title count-number"
-                  data-to={976}
+                  data-to={5000}
                   data-speed={2000}
                 >
-                  976
+                  5000
                 </h2>
                 <p>
-                  Satisfied
+                  Successful
                   <br />
-                  Customer
+                  Deliveries
                 </p>
               </div>
             </div>
@@ -372,15 +360,15 @@ const Index = () => {
               <div className="count-time">
                 <h2
                   className="timer count-title count-number"
-                  data-to={12}
+                  data-to={50}
                   data-speed={2000}
                 >
-                  12
+                  50
                 </h2>
                 <p>
-                  Best
+                  Zones
                   <br />
-                  Restaurants
+                  Covered
                 </p>
               </div>
             </div>
@@ -393,16 +381,16 @@ const Index = () => {
               <div className="count-time sp">
                 <h2
                   className="timer count-title count-number"
-                  data-to={1}
+                  data-to={200}
                   data-speed={2000}
                 >
-                  1
+                  200
                 </h2>
-                <span>k+</span>
+                <span>+</span>
                 <p>
-                  Food
+                  Business
                   <br />
-                  Delivered
+                  Partners
                 </p>
               </div>
             </div>
@@ -425,15 +413,15 @@ const Index = () => {
                   <Swiper {...sliderProps.index1Testmoninal}>
                     <SwiperSlide className="item">
                       <h4>
-                        "Dapibus ultrices in iaculis nunc sed augue lacus
-                        viverra vitae. Mauris a diam maecenas sed enim. Egestas
-                        diam in arcu cursus euismod quis. Quam quisque id diam
-                        vel".
+                        “Go-Line transformed our e-commerce business. Our
+                        customers now receive their orders the same day in most
+                        zones. The tracking system is outstanding and the team
+                        is always responsive.”
                       </h4>
                       <div className="thomas">
-                        <img alt="girl" src="assets/img/photo-5.jpg" />
+                        <img alt="client" src="assets/img/photo-5.jpg" />
                         <div>
-                          <h6>Thomas Adamson</h6>
+                          <h6>Ahmed Al-Rashidi — E-Commerce Manager</h6>
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
@@ -444,15 +432,15 @@ const Index = () => {
                     </SwiperSlide>
                     <SwiperSlide className="item">
                       <h4>
-                        "Dapibus ultrices in iaculis nunc sed augue lacus
-                        viverra vitae. Mauris a diam maecenas sed enim. Egestas
-                        diam in arcu cursus euismod quis. Quam quisque id diam
-                        vel".
+                        “We ship hundreds of parcels weekly and Go-Line handles
+                        every single one without a hitch. Their dedicated
+                        account manager keeps us updated at every stage. Highly
+                        recommended for growing businesses.”
                       </h4>
                       <div className="thomas">
-                        <img alt="girl" src="assets/img/photo-5.jpg" />
+                        <img alt="client" src="assets/img/man-2.jpg" />
                         <div>
-                          <h6>Thomas Adamson</h6>
+                          <h6>Sara Khalid — Operations Director</h6>
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
@@ -463,20 +451,19 @@ const Index = () => {
                     </SwiperSlide>
                     <SwiperSlide className="item">
                       <h4>
-                        "Dapibus ultrices in iaculis nunc sed augue lacus
-                        viverra vitae. Mauris a diam maecenas sed enim. Egestas
-                        diam in arcu cursus euismod quis. Quam quisque id diam
-                        vel".
+                        “The best courier service I have used. Fast pickups,
+                        real-time tracking, and zero damaged packages. Go-Line
+                        is now the backbone of our fulfillment operation.”
                       </h4>
                       <div className="thomas">
-                        <img alt="girl" src="assets/img/photo-5.jpg" />
+                        <img alt="client" src="assets/img/photo-5.jpg" />
                         <div>
-                          <h6>Thomas Adamson</h6>
+                          <h6>Khaled Bin Nasser — Retail Business Owner</h6>
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
-                          <i className="fa-solid fa-star" />
+                          <i className="fa-regular fa-star-half-stroke" />
                         </div>
                       </div>
                     </SwiperSlide>
@@ -512,7 +499,7 @@ const Index = () => {
         style={{ backgroundColor: "#363636" }}
       >
         <div className="container">
-          <h2>Want to Join Partnership?</h2>
+          <h2>Grow With Go-Line</h2>
           <div className="row">
             <div
               className="col-lg-6"
@@ -521,11 +508,11 @@ const Index = () => {
               data-aos-duration={300}
             >
               <div className="join-img">
-                <img alt="img" src="assets/img/photo-6.jpg" />
+                <img alt="courier" src="assets/img/photo-6.jpg" />
                 <div className="Join-courier">
-                  <h3>Join Courier</h3>
+                  <h3>Become a Driver</h3>
                   <Link href="become-partner" className="button button-2">
-                    Learn More <i className="fa-solid fa-arrow-right" />
+                    Join Now <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </div>
               </div>
@@ -537,11 +524,11 @@ const Index = () => {
               data-aos-duration={400}
             >
               <div className="join-img">
-                <img alt="img" src="assets/img/photo-7.jpg" />
+                <img alt="business" src="assets/img/photo-7.jpg" />
                 <div className="Join-courier">
-                  <h3>Join Merchant</h3>
+                  <h3>Partner Your Business</h3>
                   <Link href="become-partner" className="button button-2">
-                    Learn More <i className="fa-solid fa-arrow-right" />
+                    Join Now <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </div>
               </div>
@@ -552,7 +539,7 @@ const Index = () => {
       {/* news-section */}
       <section className="news-section gap">
         <div className="container">
-          <h2>Latest news and events</h2>
+          <h2>Latest News &amp; Insights</h2>
           <div className="row">
             <div
               className="col-xl-6 col-lg-12"
@@ -561,17 +548,16 @@ const Index = () => {
               data-aos-duration={300}
             >
               <div className="news-posts-one">
-                <img alt="man" src="assets/img/photo-8.jpg" />
+                <img alt="news" src="assets/img/photo-8.jpg" />
                 <div className="quickeat">
                   {" "}
-                  <a href="#">news</a> <a href="#">quickeat</a>
+                  <a href="#">news</a> <a href="#">go-line</a>
                 </div>
-                <h3>We Have Received An Award For The Quality Of Our Work</h3>
+                <h3>Go-Line Expands Coverage to 10 New Cities in 2026</h3>
                 <p>
-                  Donec adipiscing tristique risus nec feugiat in fermentum.
-                  Sapien eget mi proin sed libero. Et magnis dis parturient
-                  montes nascetur. Praesent semper feugiat nibh sed pulvinar
-                  proin gravida.
+                  We are thrilled to announce our expansion into 10 new cities
+                  this year, bringing fast and reliable last-mile delivery to
+                  thousands of new businesses and consumers.
                 </p>{" "}
                 <Link href="/single-blog">
                   Read More
@@ -581,19 +567,19 @@ const Index = () => {
                   <li>
                     <h6>
                       <i className="fa-solid fa-user" />
-                      by Quickeat
+                      by Go-Line
                     </h6>
                   </li>
                   <li>
                     <h6>
                       <i className="fa-regular fa-calendar-days" />
-                      01.Jan. 2022
+                      15.Feb. 2026
                     </h6>
                   </li>
                   <li>
                     <h6>
                       <i className="fa-solid fa-eye" />
-                      132
+                      248
                     </h6>
                   </li>
                 </ul>
@@ -606,112 +592,112 @@ const Index = () => {
               data-aos-duration={400}
             >
               <div className="news-post-two">
-                <img alt="food-img" src="assets/img/food-1.jpg" />
+                <img alt="blog-img" src="assets/img/food-1.jpg" />
                 <div className="news-post-two-data">
                   <div className="quickeat">
                     {" "}
-                    <a href="#">restaurants</a> <a href="#">cooking</a>
+                    <a href="#">logistics</a> <a href="#">tips</a>
                   </div>
                   <h6>
                     <Link href="single-blog">
-                      With Quickeat you can order food for the whole day
+                      5 Ways to Reduce Last-Mile Delivery Costs for Your Business
                     </Link>
                   </h6>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor...
+                    Discover proven strategies that help e-commerce businesses
+                    cut shipping costs without sacrificing speed or quality...
                   </p>
                   <ul className="data">
                     <li>
                       <h6>
                         <i className="fa-solid fa-user" />
-                        by Quickeat
+                        by Go-Line
                       </h6>
                     </li>
                     <li>
                       <h6>
                         <i className="fa-regular fa-calendar-days" />
-                        01.Jan. 2022
+                        10.Feb. 2026
                       </h6>
                     </li>
                     <li>
                       <h6>
                         <i className="fa-solid fa-eye" />
-                        132
+                        184
                       </h6>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="news-post-two">
-                <img alt="food-img" src="assets/img/food-2.jpg" />
+                <img alt="blog-img" src="assets/img/food-2.jpg" />
                 <div className="news-post-two-data">
                   <div className="quickeat">
                     {" "}
-                    <a href="#">restaurants</a> <a href="#">cooking</a>
+                    <a href="#">couriers</a> <a href="#">hiring</a>
                   </div>
                   <h6>
-                    <Link href="single-blog">127+ Couriers On Our Team!</Link>
+                    <Link href="single-blog">300+ Active Drivers Now On The Go-Line Network</Link>
                   </h6>
                   <p>
-                    Urna condimentum mattis pellentesque id nibh tortor id
-                    aliquet. Tellus at urna condimentum mattis...
+                    Our courier fleet has grown to over 300 active drivers,
+                    enabling us to serve more clients faster than ever before...
                   </p>
                   <ul className="data">
                     <li>
                       <h6>
                         <i className="fa-solid fa-user" />
-                        by Quickeat
+                        by Go-Line
                       </h6>
                     </li>
                     <li>
                       <h6>
                         <i className="fa-regular fa-calendar-days" />
-                        01.Jan. 2022
+                        05.Feb. 2026
                       </h6>
                     </li>
                     <li>
                       <h6>
                         <i className="fa-solid fa-eye" />
-                        132
+                        321
                       </h6>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="news-post-two end">
-                <img alt="food-img" src="assets/img/food-3.jpg" />
+                <img alt="blog-img" src="assets/img/food-3.jpg" />
                 <div className="news-post-two-data">
                   <div className="quickeat">
                     {" "}
-                    <a href="#">restaurants</a> <a href="#">cooking</a>
+                    <a href="#">business</a> <a href="#">delivery</a>
                   </div>
                   <h6>
                     <Link href="single-blog">
-                      Why You Should Optimize Your Menu for Delivery
+                      How Real-Time Tracking Builds Customer Trust in Delivery
                     </Link>
                   </h6>
                   <p>
-                    Enim lobortis scelerisque fermentum dui. Sit amet cursus sit
-                    amet dictum sit amet. Rutrum tellus...
+                    Transparency is the new competitive advantage. Learn how
+                    live tracking technology is reshaping customer expectations...
                   </p>
                   <ul className="data">
                     <li>
                       <h6>
                         <i className="fa-solid fa-user" />
-                        by Quickeat
+                        by Go-Line
                       </h6>
                     </li>
                     <li>
                       <h6>
                         <i className="fa-regular fa-calendar-days" />
-                        01.Jan. 2022
+                        01.Feb. 2026
                       </h6>
                     </li>
                     <li>
                       <h6>
                         <i className="fa-solid fa-eye" />
-                        132
+                        197
                       </h6>
                     </li>
                   </ul>
