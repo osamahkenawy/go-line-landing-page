@@ -1,15 +1,27 @@
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import MobileMenu from "./MobileMenu";
 
 const Header = ({ extraClass }) => {
+  const { t } = useTranslation("common");
+  const router = useRouter();
+  const { locale, pathname, asPath, query } = router;
+
   // mobile menu
   const [mobileToggle, setMobileToggle] = useState(false);
+
+  const toggleLocale = () => {
+    const nextLocale = locale === "en" ? "ar" : "en";
+    router.push({ pathname, query }, asPath, { locale: nextLocale });
+  };
+
   return (
     <header className={extraClass}>
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-xl-2">
+          <div className="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
             <div className="header-style">
               <Link href="/">
                 <svg
@@ -30,50 +42,68 @@ const Header = ({ extraClass }) => {
                   </text>
                 </svg>
               </Link>
-              <div className="extras bag">
+              <div className="extras bag" style={{ flexShrink: 0 }}>
                 <div className="bar-menu" onClick={() => setMobileToggle(true)}>
                   <i className="fa-solid fa-bars" />
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-lg-7">
+          <div className="col-lg-6">
             <nav className="navbar">
               <ul className="navbar-links">
                 <li className="navbar-dropdown">
-                  <Link href="/">Home</Link>
+                  <Link href="/">{t("nav.home")}</Link>
                 </li>
                 <li className="navbar-dropdown">
-                  <Link href="about">About Us</Link>
+                  <Link href="about">{t("nav.about")}</Link>
                 </li>
                 <li className="navbar-dropdown">
-                  <Link href="services">Services</Link>
+                  <Link href="services">{t("nav.services")}</Link>
                   <div className="dropdown">
-                    <Link href="services">All Services</Link>
-                    <Link href="pricing-table">Pricing</Link>
-                    <Link href="become-partner">Become A Partner</Link>
+                    <Link href="services">{t("nav.allServices")}</Link>
+                    <Link href="pricing-table">{t("nav.pricing")}</Link>
+                    <Link href="become-partner">{t("nav.becomePartner")}</Link>
                   </div>
                 </li>
                 <li className="navbar-dropdown">
-                  <Link href="#">Pages</Link>
+                  <Link href="#">{t("nav.pages")}</Link>
                   <div className="dropdown">
-                    <Link href="blog">Blog</Link>
-                    <Link href="single-blog">Single Article</Link>
-                    <Link href="faq">FAQ</Link>
-                    <Link href="404">404</Link>
+                    <Link href="blog">{t("nav.blog")}</Link>
+                    <Link href="single-blog">{t("nav.singleArticle")}</Link>
+                    <Link href="faq">{t("nav.faq")}</Link>
+                    <Link href="404">{t("nav.error404")}</Link>
                   </div>
                 </li>
                 <li className="navbar-dropdown">
-                  <Link href="contacts">Contacts</Link>
+                  <Link href="contacts">{t("nav.contacts")}</Link>
                 </li>
               </ul>
             </nav>
           </div>
-          <div className="col-lg-3">
-            <div className="extras bag">
+          <div className="col-lg-4">
+            <div className="desktop-actions d-none d-lg-flex" style={{ alignItems: "center", gap: "12px", justifyContent: "flex-end" }}>
               <Link href="contacts" className="button button-2">
-                Get a Quote
+                {t("contacts.heroTitle") === "Get in touch with Go-Line"
+                  ? t("home.getQuote")
+                  : t("home.getQuote")}
               </Link>
+              <button
+                onClick={toggleLocale}
+                style={{
+                  background: "none",
+                  border: "2px solid #ff6a00",
+                  borderRadius: "6px",
+                  padding: "6px 14px",
+                  cursor: "pointer",
+                  fontWeight: 600,
+                  color: "#ff6a00",
+                  fontSize: "14px",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                {t("switchLang")}
+              </button>
             </div>
           </div>
           <div
@@ -109,10 +139,25 @@ const Header = ({ extraClass }) => {
               </span>
             </div>
             <MobileMenu />
-            <div style={{ padding: "20px" }}>
+            <div style={{ padding: "20px", display: "flex", gap: "12px", alignItems: "center" }}>
               <Link href="contacts" className="button button-2">
-                Get a Quote
+                {t("home.getQuote")}
               </Link>
+              <button
+                onClick={toggleLocale}
+                style={{
+                  background: "none",
+                  border: "2px solid #ff6a00",
+                  borderRadius: "6px",
+                  padding: "6px 14px",
+                  cursor: "pointer",
+                  fontWeight: 600,
+                  color: "#ff6a00",
+                  fontSize: "14px",
+                }}
+              >
+                {t("switchLang")}
+              </button>
             </div>
           </div>
         </div>
@@ -121,3 +166,4 @@ const Header = ({ extraClass }) => {
   );
 };
 export default Header;
+

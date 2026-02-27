@@ -2,7 +2,11 @@ import Layout from "@/src/layouts/Layout";
 import { sliderProps } from "@/src/sliderProps";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 const About = () => {
+  const { t } = useTranslation("common");
   return (
     <Layout>
       <section
@@ -20,19 +24,16 @@ const About = () => {
               <div className="about-text">
                 <ul className="crumbs d-flex">
                   <li>
-                    <Link href="/">Home</Link>
+                    <Link href="/">{t("breadcrumbs.home")}</Link>
                   </li>
                   <li className="two">
                     <Link href="/">
-                      <i className="fa-solid fa-right-long" /> About Us
+                      <i className="fa-solid fa-right-long" /> {t("breadcrumbs.about")}
                     </Link>
                   </li>
                 </ul>
-                <h2>Your Trusted Last-Mile Delivery Partner</h2>
-                <p>
-                  Go-Line delivers more than packages — we deliver reliability,
-                  speed, and peace of mind for businesses of all sizes.
-                </p>
+                <h2>{t("about.heroTitle")}</h2>
+                <p>{t("about.heroSubtitle")}</p>
               </div>
             </div>
             <div
@@ -69,18 +70,8 @@ const About = () => {
               data-aos-duration={500}
             >
               <div className="our-mission-text">
-                <h2>Our mission is to make delivery effortless</h2>
-                <p>
-                  Go-Line was founded with one goal: to make business deliveries
-                  faster, smarter, and completely transparent. We leverage
-                  technology and a network of dedicated drivers to ensure every
-                  shipment arrives on time.
-                  <br />
-                  <br />
-                  Whether you&apos;re a small business or a large enterprise, our
-                  mission is to be the logistics backbone you can rely on every
-                  single day.
-                </p>
+                <h2>{t("about.missionTitle")}</h2>
+                <p>{t("about.missionDesc")}</p>
               </div>
             </div>
           </div>
@@ -107,11 +98,8 @@ const About = () => {
                   alt="icon"
                   src="assets/img/service-icon-1.svg"
                 />
-                <h3>Fast Delivery</h3>
-                <p>
-                  We guarantee same-day and next-day delivery across all
-                  covered zones. Speed is our promise to your customers.
-                </p>
+                <h3>{t("about.card1Title")}</h3>
+                <p>{t("about.card1Desc")}</p>
               </div>
             </div>
             <div
@@ -131,11 +119,8 @@ const About = () => {
                   alt="icon"
                   src="assets/img/service-icon-4.svg"
                 />
-                <h3>Save Time &amp; Costs</h3>
-                <p>
-                  Outsourcing your delivery to Go-Line reduces overhead costs
-                  and frees your team to focus on what matters most.
-                </p>
+                <h3>{t("about.card2Title")}</h3>
+                <p>{t("about.card2Desc")}</p>
               </div>
             </div>
             <div
@@ -155,11 +140,8 @@ const About = () => {
                   alt="icon"
                   src="assets/img/service-icon-6.svg"
                 />
-                <h3>Competitive Pricing</h3>
-                <p>
-                  Transparent, competitive pricing with no hidden fees. Choose
-                  a plan that fits your delivery volume and budget.
-                </p>
+                <h3>{t("about.card3Title")}</h3>
+                <p>{t("about.card3Desc")}</p>
               </div>
             </div>
             <div
@@ -179,11 +161,8 @@ const About = () => {
                   alt="icon"
                   src="assets/img/service-icon-8.svg"
                 />
-                <h3>Wide Zone Coverage</h3>
-                <p>
-                  Our network spans 50+ delivery zones, ensuring your packages
-                  reach every corner of the country reliably.
-                </p>
+                <h3>{t("about.card4Title")}</h3>
+                <p>{t("about.card4Desc")}</p>
               </div>
             </div>
           </div>
@@ -200,31 +179,25 @@ const About = () => {
               data-aos-duration={300}
             >
               <div className="wait-a-minute">
-                <h2>Why Go-Line is the right choice for your business</h2>
-                <p>
-                  We combine cutting-edge technology, a dedicated courier fleet,
-                  and deep local knowledge to deliver a seamless experience for
-                  you and your customers.
-                </p>
-                <h6>What sets us apart:</h6>
+                <h2>{t("about.whyTitle")}</h2>
+                <p>{t("about.whyDesc")}</p>
+                <h6>{t("about.whatSetsApart")}</h6>
                 <ul className="paragraph">
                   <li>
                     <i className="fa-solid fa-circle-check" />
-                    <h5>Real-time GPS tracking on every shipment;</h5>
+                    <h5>{t("about.bullet1")}</h5>
                   </li>
                   <li>
                     <i className="fa-solid fa-circle-check" />
-                    <h5>Dedicated account manager for business clients;</h5>
+                    <h5>{t("about.bullet2")}</h5>
                   </li>
                   <li>
                     <i className="fa-solid fa-circle-check" />
-                    <h5>Proof-of-delivery photos and digital signatures;</h5>
+                    <h5>{t("about.bullet3")}</h5>
                   </li>
                   <li>
                     <i className="fa-solid fa-circle-check" />
-                    <h5>
-                      Same-day delivery available across all major zones.
-                    </h5>
+                    <h5>{t("about.bullet4")}</h5>
                   </li>
                 </ul>
               </div>
@@ -254,17 +227,15 @@ const About = () => {
         style={{ backgroundImage: "url(assets/img/background.png)" }}
       >
         <div className="container">
-          <div className="row align-items-center">
-            <div
-              className="col-lg-6 col-md-12 col-sm-12"
-              data-aos="flip-up"
-              data-aos-delay={200}
-              data-aos-duration={300}
-            >
-              <div className="about-counters-img">
+          <div
+            className="hading"
+            data-aos="fade-up"
+            data-aos-delay={200}
+            data-aos-duration={300}
+          >
+            <h2>{t("about.counterTitle")}</h2>
                 <img alt="girl" src="assets/img/photo-10.png" />
               </div>
-            </div>
             <div
               className="col-lg-6 col-md-12 col-sm-12"
               data-aos="flip-up"
@@ -286,11 +257,7 @@ const About = () => {
                     >
                       5K+
                     </h2>
-                    <p>
-                      Packages
-                      <br />
-                      Delivered
-                    </p>
+                <p>{t("about.counter1Label")}</p>
                   </div>
                 </div>
                 <div
@@ -307,11 +274,7 @@ const About = () => {
                     >
                       50+
                     </h2>
-                    <p>
-                      Delivery
-                      <br />
-                      Zones
-                    </p>
+                  <p>{t("about.counter2Label")}</p>
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-6">
@@ -324,16 +287,11 @@ const About = () => {
                       200
                     </h2>
                     <span>+</span>
-                    <p>
-                      Business
-                      <br />
-                      Partners
-                    </p>
+                  <p>{t("about.counter3Label")}</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
       {/* Our Team Section */}
@@ -345,10 +303,8 @@ const About = () => {
             data-aos-delay={200}
             data-aos-duration={300}
           >
-            <h2>Our team</h2>
-            <p>
-              The Go-Line team is made up of logistics experts, technology engineers, and operations specialists — all dedicated to making your deliveries faster and more reliable.
-            </p>
+            <h2>{t("about.teamTitle")}</h2>
+            <p>{t("about.teamDesc")}</p>
           </div>
           <div className="row">
             <div
@@ -435,7 +391,7 @@ const About = () => {
                   {" "}
                   <a href="#">Omar Al-Rashidi</a>
                 </h4>
-                <p>Business Development Lead — building partnerships across Saudi Arabia and the region.</p>
+                <p>Business Development Lead — building partnerships across the UAE and the wider region.</p>
                 <ul className="social-media">
                   <li>
                     {" "}
@@ -471,7 +427,7 @@ const About = () => {
       >
         <div className="container">
           <div className="hading">
-            <h2>Our trusted partners</h2>
+            <h2>{t("about.partnersTitle")}</h2>
           </div>
           <Swiper
             {...sliderProps.logodata}
@@ -527,10 +483,8 @@ const About = () => {
           <div className="row">
             <div className="col-xl-4 col-lg-12">
               <div className="good-taste">
-                <h2>Built for reliability.</h2>
-                <p>
-                  Go-Line is committed to making last-mile delivery fast, transparent, and dependable for every business we serve.
-                </p>
+                <h2>{t("about.sloganTitle")}</h2>
+                <p>{t("about.sloganDesc")}</p>
               </div>
             </div>
             <div className="col-xl-8 col-lg-12">
@@ -541,12 +495,12 @@ const About = () => {
                 <SwiperSlide>
                   <div className="author-text item">
                     <p>
-                      "Go-Line transformed how we handle our daily deliveries. Real-time tracking and on-time performance have made a huge difference for our business."
+                      {t("about.review1Text")}
                     </p>
                     <div className="thomas">
                       <img alt="reviewer" src="assets/img/photo-5.jpg" />
                       <div>
-                        <h6>Ahmed Al-Rashidi</h6>
+                        <h6>{t("about.review1Author")}</h6>
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
@@ -559,12 +513,12 @@ const About = () => {
                 <SwiperSlide>
                   <div className="author-text item">
                     <p>
-                      "We switched from three different couriers to Go-Line and never looked back. One platform, one invoice, and everything on time."
+                      {t("about.review2Text")}
                     </p>
                     <div className="thomas">
                       <img alt="reviewer" src="assets/img/photo-5.jpg" />
                       <div>
-                        <h6>Sara Khalid</h6>
+                        <h6>{t("about.review2Author")}</h6>
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
@@ -577,12 +531,12 @@ const About = () => {
                 <SwiperSlide>
                   <div className="author-text item">
                     <p>
-                      "Exceptional service and competitive pricing. Our e-commerce brand relies on Go-Line for all last-mile fulfillment across Riyadh."
+                      {t("about.review3Text")}
                     </p>
                     <div className="thomas">
                       <img alt="reviewer" src="assets/img/photo-5.jpg" />
                       <div>
-                        <h6>Khaled Bin Nasser</h6>
+                        <h6>{t("about.review3Author")}</h6>
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
@@ -595,12 +549,12 @@ const About = () => {
                 <SwiperSlide>
                   <div className="author-text item">
                     <p>
-                      "The dedicated account manager and transparent pricing make Go-Line the most trusted delivery partner we have worked with."
+                      {t("about.review4Text")}
                     </p>
                     <div className="thomas">
                       <img alt="reviewer" src="assets/img/photo-5.jpg" />
                       <div>
-                        <h6>Nora Al-Ghamdi</h6>
+                        <h6>{t("about.review4Author")}</h6>
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
                         <i className="fa-solid fa-star" />
@@ -629,7 +583,7 @@ const About = () => {
                   data-aos-delay={200}
                   data-aos-duration={300}
                 >
-                  Stay updated with Go-Line delivery news and exclusive offers
+                  {t("subscribe.heading")}
                 </h2>
                 <form
                   onSubmit={(e) => e.preventDefault()}
@@ -641,9 +595,9 @@ const About = () => {
                   <input
                     type="text"
                     name="email"
-                    placeholder="Enter email address"
+                    placeholder={t("subscribe.placeholder")}
                   />
-                  <button className="button button-2">Subscribe</button>
+                  <button className="button button-2">{t("subscribe.button")}</button>
                 </form>
               </div>
             </div>
@@ -654,3 +608,9 @@ const About = () => {
   );
 };
 export default About;
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});

@@ -1,4 +1,7 @@
+import { useTranslation } from "next-i18next";
+
 const Subscribe = () => {
+  const { t } = useTranslation("common");
   return (
     <section
       className="subscribe-section gap"
@@ -23,15 +26,15 @@ const Subscribe = () => {
             data-aos-duration={400}
           >
             <div className="get-the-menu">
-              <h2>Stay updated with Go-Line delivery news and offers</h2>
+              <h2>{t("subscribe.heading")}</h2>
               <form onSubmit={(e) => e.preventDefault()}>
                 <i className="fa-regular fa-bell" />
                 <input
                   type="text"
                   name="email"
-                  placeholder="Enter your email address"
+                  placeholder={t("subscribe.placeholder")}
                 />
-                <button className="button button-2">Subscribe</button>
+                <button className="button button-2">{t("subscribe.button")}</button>
               </form>
             </div>
           </div>
@@ -41,3 +44,4 @@ const Subscribe = () => {
   );
 };
 export default Subscribe;
+

@@ -6,3 +6,117 @@
 .owl-carousel {
   display: block;
 }
+
+/* ===== GLOBAL RESPONSIVE FIXES ===== */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-restaurant img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Hero section padding on tablet */
+@media (max-width: 991px) {
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  .img-restaurant {
+    margin-top: 40px;
+  }
+  .wilmington {
+    width: 55% !important;
+  }
+  .wilmington.location-restaurant {
+    width: 45% !important;
+  }
+  .restaurant h1 {
+    width: 100%;
+  }
+  .restaurant p {
+    width: 100%;
+  }
+  .food-content-section h2,
+  .food-content-section p {
+    width: 100%;
+  }
+  .city-restaurants h2,
+  .city-restaurants p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wilmington {
+    width: 80% !important;
+    left: 5% !important;
+  }
+  .wilmington.location-restaurant {
+    width: 60% !important;
+    right: 5% !important;
+    left: auto !important;
+  }
+  .logos-card {
+    padding: 20px;
+  }
+  .count-time {
+    padding: 25px;
+  }
+  .join-img {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .join-img:before {
+    width: 90%;
+  }
+  .news-section h2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wilmington {
+    position: relative !important;
+    width: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin-top: 15px;
+    border-radius: 12px;
+  }
+  .wilmington.location-restaurant {
+    position: relative !important;
+    width: 100% !important;
+    right: 0 !important;
+    margin-top: 10px;
+  }
+  .img-restaurant {
+    padding-bottom: 0;
+  }
+  .nice-select-one {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .nice-select-one .button {
+    margin-left: 0 !important;
+  }
+  .restaurant h1 {
+    font-size: 36px;
+    line-height: 46px;
+    width: 100%;
+  }
+  .hero-section {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}

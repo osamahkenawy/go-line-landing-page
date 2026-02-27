@@ -1,7 +1,10 @@
 import Subscribe from "@/src/components/Subscribe";
 import Layout from "@/src/layouts/Layout";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const Contacts = () => {
+  const { t } = useTranslation("common");
   return (
     <Layout>
       <section className="hero-section about gap">
@@ -16,55 +19,41 @@ const Contacts = () => {
               <div className="about-text">
                 <ul className="crumbs d-flex">
                   <li>
-                    <Link href="/">Home</Link>
+                    <Link href="/">{t("breadcrumbs.home")}</Link>
                   </li>
                   <li className="two">
                     <Link href="/">
                       <i className="fa-solid fa-right-long" />
-                      Contacts
+                      {t("breadcrumbs.contacts")}
                     </Link>
                   </li>
                 </ul>
-                <h2>Get in touch with Go-Line</h2>
-                <p>
-                  We&apos;re here to help with any delivery questions, partnership
-                  inquiries, or support requests. Reach out and we&apos;ll respond
-                  promptly.
-                </p>
+                <h2>{t("contacts.heroTitle")}</h2>
+                <p>{t("contacts.heroSubtitle")}</p>
               </div>
               <div className="row">
                 <div className="col-lg-4 col-md-4 col-sm-12">
                   <div className="address">
                     <i className="fa-solid fa-location-dot" />
-                    <h5>
-                      King Fahd Road, Riyadh 12271, Saudi Arabia
-                    </h5>
+                    <h5>{t("contacts.address")}</h5>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-12">
                   <div className="address">
                     <i className="fa-solid fa-envelope" />
-                    <a href="mailto:info@go-line.sa">
-                      <h6>info@go-line.sa</h6>
-                    </a>
-                    <span>General inquiries &amp; support</span>
-                    <a href="mailto:partners@go-line.sa">
-                      <h6>partners@go-line.sa</h6>
-                    </a>
-                    <span>Partnership requests</span>
+                    <a href="mailto:info@go-line.ae"><h6>info@go-line.ae</h6></a>
+                    <span>{t("contacts.generalEmailLabel")}</span>
+                    <a href="mailto:partners@go-line.ae"><h6>partners@go-line.ae</h6></a>
+                    <span>{t("contacts.partnersEmailLabel")}</span>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-12">
                   <div className="address">
                     <i className="fa-solid fa-phone" />
-                    <a href="callto:+966500000000">
-                      <h6>+966 50 000 0000</h6>
-                    </a>
-                    <span>Customer support line</span>
-                    <a href="callto:+966500000001">
-                      <h6>+966 50 000 0001</h6>
-                    </a>
-                    <span>Business &amp; sales team</span>
+                    <a href="callto:+971500000000"><h6>+971 50 000 0000</h6></a>
+                    <span>{t("contacts.phone1Label")}</span>
+                    <a href="callto:+971500000001"><h6>+971 50 000 0001</h6></a>
+                    <span>{t("contacts.phone2Label")}</span>
                   </div>
                 </div>
               </div>
@@ -128,7 +117,7 @@ const Contacts = () => {
                 </div>
                 <div className="contact-map">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.3929839093!2d46.6752957!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sKing%20Fahd%20Road%2C%20Riyadh!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.2!2d55.1713!3d25.0657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbf5c4c7c9fcbc5a1!2sSheikh%20Zayed%20Rd%2C%20Dubai!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
                     width={600}
                     height={450}
                     style={{ border: 0 }}
@@ -148,3 +137,9 @@ const Contacts = () => {
   );
 };
 export default Contacts;
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});

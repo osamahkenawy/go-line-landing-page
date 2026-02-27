@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation("common");
   return (
     <footer className="gap no-bottom" style={{ backgroundColor: "#363636" }}>
       <div className="container">
@@ -26,51 +28,47 @@ const Footer = () => {
                   </text>
                 </svg>
               </Link>
-              <h2>Fast, Reliable Delivery For Your Business</h2>
-              <p>
-                Go-Line is your trusted last-mile delivery partner. We connect
-                businesses with fast, reliable couriers ensuring every shipment
-                arrives safely and on time.
-              </p>
+              <h2>{t("footer.tagline")}</h2>
+              <p>{t("footer.description")}</p>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="menu">
-              <h4>Quick Links</h4>
+              <h4>{t("footer.quickLinks")}</h4>
               <ul className="footer-menu">
                 <li>
                   <Link href="/">
-                    Home
+                    {t("nav.home")}
                     <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </li>
                 <li>
                   <Link href="about">
-                    About Us
+                    {t("nav.about")}
                     <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </li>
                 <li>
                   <Link href="services">
-                    Services
+                    {t("nav.services")}
                     <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </li>
                 <li>
                   <Link href="become-partner">
-                    Become A Partner
+                    {t("nav.becomePartner")}
                     <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </li>
                 <li>
                   <Link href="faq">
-                    FAQ
+                    {t("nav.faq")}
                     <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </li>
                 <li>
                   <Link href="contacts">
-                    Contacts
+                    {t("nav.contacts")}
                     <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </li>
@@ -79,42 +77,42 @@ const Footer = () => {
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="menu contacts">
-              <h4>Contact Us</h4>
+              <h4>{t("footer.contactUs")}</h4>
               <div className="footer-location">
                 <i className="fa-solid fa-location-dot" />
-                <p>King Fahd Road, Riyadh 12271, Saudi Arabia</p>
+                <p>{t("footer.address")}</p>
               </div>
-              <a href="mailto:info@go-line.sa">
+              <a href="mailto:info@go-line.ae">
                 <i className="fa-solid fa-envelope" />
-                info@go-line.sa
+                {t("footer.email")}
               </a>
-              <a href="callto:+966500000000">
+              <a href="callto:+971500000000">
                 <i className="fa-solid fa-phone" />
-                +966 50 000 0000
+                {t("footer.phone")}
               </a>
             </div>
             <ul className="social-media">
               <li>
                 {" "}
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://facebook.com" target="_blank" rel="noreferrer">
                   <i className="fa-brands fa-facebook-f" />
                 </a>
               </li>
               <li>
                 {" "}
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://instagram.com" target="_blank" rel="noreferrer">
                   <i className="fa-brands fa-instagram" />
                 </a>
               </li>
               <li>
                 {" "}
-                <a href="https://twitter.com" target="_blank">
+                <a href="https://twitter.com" target="_blank" rel="noreferrer">
                   <i className="fa-brands fa-twitter" />
                 </a>
               </li>
               <li>
                 {" "}
-                <a href="https://linkedin.com" target="_blank">
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                   <i className="fa-brands fa-linkedin-in" />
                 </a>
               </li>
@@ -122,10 +120,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-two gap no-bottom">
-          <p>Copyright &copy; 2026. Go-Line Delivery. All rights reserved.</p>
+          <p>{t("footer.copyright")}</p>
           <div className="privacy">
             {" "}
-            <a href="#">Privacy Policy</a> <a href="#">Terms &amp; Services</a>
+            <a href="#">{t("footer.privacy")}</a>{" "}
+            <a href="#">{t("footer.terms")}</a>
           </div>
         </div>
       </div>
@@ -133,3 +132,4 @@ const Footer = () => {
   );
 };
 export default Footer;
+

@@ -1,7 +1,10 @@
 import Subscribe from "@/src/components/Subscribe";
 import Layout from "@/src/layouts/Layout";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const Blog = () => {
+  const { t } = useTranslation("common");
   return (
     <Layout>
       <section
@@ -19,20 +22,17 @@ const Blog = () => {
               <div className="about-text">
                 <ul className="crumbs d-flex">
                   <li>
-                    <Link href="/">Home</Link>
+                    <Link href="/">{t("breadcrumbs.home")}</Link>
                   </li>
                   <li className="two">
                     <Link href="/">
                       <i className="fa-solid fa-right-long" />
-                      Blog Page
+                      {t("breadcrumbs.blogPage")}
                     </Link>
                   </li>
                 </ul>
-                <h2>Current news about Us</h2>
-                <p>
-                  Egestas sed tempus urna et pharetra pharetra massa. Fermentum
-                  posuere urna nec tincidunt praesent semper.
-                </p>
+                <h2>{t("blog.heroTitle")}</h2>
+                <p>{t("blog.heroSubtitle")}</p>
               </div>
             </div>
             <div
@@ -76,36 +76,13 @@ const Blog = () => {
                   </div>
                 </div>
                 <div className="blog-post-data-img">
-                  <h3>We Have Received An Award For The Quality Of Our Work</h3>
-                  <p>
-                    Scelerisque purus semper eget duis at. Tincidunt ornare
-                    massa eget egestas purus viverra. Morbi enim nunc faucibus a
-                    pellentesque. Lobortis elementum nibh tellus molestie nunc
-                    non...
-                  </p>{" "}
-                  <Link href="/single-blog">
-                    Read More
-                    <i className="fa-solid fa-arrow-right" />
-                  </Link>
+                  <h3>{t("blog.article1Title")}</h3>
+                  <p>{t("blog.articleExcerpt")}</p>{" "}
+                  <Link href="/single-blog">{t("blog.readMore")}<i className="fa-solid fa-arrow-right" /></Link>
                   <ul className="data">
-                    <li>
-                      <h6>
-                        <i className="fa-solid fa-user" />
-                        by Go-Line
-                      </h6>
-                    </li>
-                    <li>
-                      <h6>
-                        <i className="fa-regular fa-calendar-days" />
-                        01.Jan. 2022
-                      </h6>
-                    </li>
-                    <li>
-                      <h6>
-                        <i className="fa-solid fa-eye" />
-                        132
-                      </h6>
-                    </li>
+                    <li><h6><i className="fa-solid fa-user" />{t("blog.byLine")}</h6></li>
+                    <li><h6><i className="fa-regular fa-calendar-days" />01.Jan. 2022</h6></li>
+                    <li><h6><i className="fa-solid fa-eye" />132</h6></li>
                   </ul>
                 </div>
               </div>
@@ -122,36 +99,13 @@ const Blog = () => {
                   {" "}
                   <a href="#">news</a> <a href="#">go-line</a>
                 </div>
-                <h3>How Go-Line Is Simplifying Last-Mile Delivery for Businesses</h3>
-                <p>
-                  Scelerisque purus semper eget duis at. Tincidunt ornare massa
-                  eget egestas purus viverra. Morbi enim nunc faucibus a
-                  pellentesque. Lobortis elementum nibh tellus molestie nunc
-                  non...
-                </p>{" "}
-                <Link href="/single-blog">
-                  Read More
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
+                <h3>{t("blog.article2Title")}</h3>
+                <p>{t("blog.articleExcerpt")}</p>{" "}
+                <Link href="/single-blog">{t("blog.readMore")}<i className="fa-solid fa-arrow-right" /></Link>
                 <ul className="data">
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-user" />
-                      by Go-Line
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-regular fa-calendar-days" />
-                      01.Jan. 2022
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-eye" />
-                      132
-                    </h6>
-                  </li>
+                  <li><h6><i className="fa-solid fa-user" />{t("blog.byLine")}</h6></li>
+                  <li><h6><i className="fa-regular fa-calendar-days" />01.Jan. 2022</h6></li>
+                  <li><h6><i className="fa-solid fa-eye" />132</h6></li>
                 </ul>
               </div>
             </div>
@@ -167,81 +121,13 @@ const Blog = () => {
                   {" "}
                   <a href="#">news</a> <a href="#">go-line</a>
                 </div>
-                <h3>127+ Couriers On Our Team Big Food Trends</h3>
-                <p>
-                  Scelerisque purus semper eget duis at. Tincidunt ornare massa
-                  eget egestas purus viverra. Morbi enim nunc faucibus a
-                  pellentesque. Lobortis elementum nibh tellus molestie nunc
-                  non...
-                </p>{" "}
-                <Link href="/single-blog">
-                  Read More
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
+                <h3>{t("blog.article3Title")}</h3>
+                <p>{t("blog.articleExcerpt")}</p>{" "}
+                <Link href="/single-blog">{t("blog.readMore")}<i className="fa-solid fa-arrow-right" /></Link>
                 <ul className="data">
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-user" />
-                      by Go-Line
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-regular fa-calendar-days" />
-                      01.Jan. 2022
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-eye" />
-                      132
-                    </h6>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              className="col-xl-4 col-lg-6 col-md-6 col-sm-12"
-              data-aos="flip-up"
-              data-aos-delay={400}
-              data-aos-duration={500}
-            >
-              <div className="news-posts-one blog">
-                <img alt="man" src="assets/img/news-7.jpg" />
-                <div className="quickeat">
-                  {" "}
-                  <a href="#">news</a> <a href="#">go-line</a>
-                </div>
-                <h3>Why You Should Optimize Your Menu for Delivery</h3>
-                <p>
-                  Scelerisque purus semper eget duis at. Tincidunt ornare massa
-                  eget egestas purus viverra. Morbi enim nunc faucibus a
-                  pellentesque. Lobortis elementum nibh tellus molestie nunc
-                  non...
-                </p>{" "}
-                <Link href="/single-blog">
-                  Read More
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
-                <ul className="data">
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-user" />
-                      by Go-Line
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-regular fa-calendar-days" />
-                      01.Jan. 2022
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-eye" />
-                      132
-                    </h6>
-                  </li>
+                  <li><h6><i className="fa-solid fa-user" />{t("blog.byLine")}</h6></li>
+                  <li><h6><i className="fa-regular fa-calendar-days" />01.Jan. 2022</h6></li>
+                  <li><h6><i className="fa-solid fa-eye" />132</h6></li>
                 </ul>
               </div>
             </div>
@@ -257,36 +143,13 @@ const Blog = () => {
                   {" "}
                   <a href="#">news</a> <a href="#">go-line</a>
                 </div>
-                <h3>How Restaurants Can Engage with Millennials in 2022</h3>
-                <p>
-                  Scelerisque purus semper eget duis at. Tincidunt ornare massa
-                  eget egestas purus viverra. Morbi enim nunc faucibus a
-                  pellentesque. Lobortis elementum nibh tellus molestie nunc
-                  non...
-                </p>{" "}
-                <Link href="/single-blog">
-                  Read More
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
+                <h3>{t("blog.article4Title")}</h3>
+                <p>{t("blog.articleExcerpt")}</p>{" "}
+                <Link href="/single-blog">{t("blog.readMore")}<i className="fa-solid fa-arrow-right" /></Link>
                 <ul className="data">
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-user" />
-                      by Go-Line
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-regular fa-calendar-days" />
-                      01.Jan. 2022
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-eye" />
-                      132
-                    </h6>
-                  </li>
+                  <li><h6><i className="fa-solid fa-user" />{t("blog.byLine")}</h6></li>
+                  <li><h6><i className="fa-regular fa-calendar-days" />01.Jan. 2022</h6></li>
+                  <li><h6><i className="fa-solid fa-eye" />132</h6></li>
                 </ul>
               </div>
             </div>
@@ -302,36 +165,13 @@ const Blog = () => {
                   {" "}
                   <a href="#">news</a> <a href="#">go-line</a>
                 </div>
-                <h3>Why You Should Optimize Your Menu for Delivery</h3>
-                <p>
-                  Scelerisque purus semper eget duis at. Tincidunt ornare massa
-                  eget egestas purus viverra. Morbi enim nunc faucibus a
-                  pellentesque. Lobortis elementum nibh tellus molestie nunc
-                  non...
-                </p>{" "}
-                <Link href="/single-blog">
-                  Read More
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
+                <h3>{t("blog.article5Title")}</h3>
+                <p>{t("blog.articleExcerpt")}</p>{" "}
+                <Link href="/single-blog">{t("blog.readMore")}<i className="fa-solid fa-arrow-right" /></Link>
                 <ul className="data">
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-user" />
-                      by Go-Line
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-regular fa-calendar-days" />
-                      01.Jan. 2022
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-eye" />
-                      132
-                    </h6>
-                  </li>
+                  <li><h6><i className="fa-solid fa-user" />{t("blog.byLine")}</h6></li>
+                  <li><h6><i className="fa-regular fa-calendar-days" />01.Jan. 2022</h6></li>
+                  <li><h6><i className="fa-solid fa-eye" />132</h6></li>
                 </ul>
               </div>
             </div>
@@ -347,36 +187,13 @@ const Blog = () => {
                   {" "}
                   <a href="#">news</a> <a href="#">go-line</a>
                 </div>
-                <h3>5 Big food Trends Coming Your Way in 2022</h3>
-                <p>
-                  Scelerisque purus semper eget duis at. Tincidunt ornare massa
-                  eget egestas purus viverra. Morbi enim nunc faucibus a
-                  pellentesque. Lobortis elementum nibh tellus molestie nunc
-                  non...
-                </p>{" "}
-                <Link href="/single-blog">
-                  Read More
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
+                <h3>{t("blog.article6Title")}</h3>
+                <p>{t("blog.articleExcerpt")}</p>{" "}
+                <Link href="/single-blog">{t("blog.readMore")}<i className="fa-solid fa-arrow-right" /></Link>
                 <ul className="data">
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-user" />
-                      by Go-Line
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-regular fa-calendar-days" />
-                      01.Jan. 2022
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-eye" />
-                      132
-                    </h6>
-                  </li>
+                  <li><h6><i className="fa-solid fa-user" />{t("blog.byLine")}</h6></li>
+                  <li><h6><i className="fa-regular fa-calendar-days" />01.Jan. 2022</h6></li>
+                  <li><h6><i className="fa-solid fa-eye" />132</h6></li>
                 </ul>
               </div>
             </div>
@@ -387,10 +204,7 @@ const Blog = () => {
               data-aos-duration={300}
             >
               {" "}
-              <Link href="/single-blog" className="button button-2 non">
-                See All
-                <i className="fa-solid fa-arrow-right" />
-              </Link>
+              <Link href="/single-blog" className="button button-2 non">{t("blog.loadMore")}<i className="fa-solid fa-arrow-right" /></Link>
             </div>
           </div>
         </div>
@@ -401,3 +215,9 @@ const Blog = () => {
   );
 };
 export default Blog;
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});

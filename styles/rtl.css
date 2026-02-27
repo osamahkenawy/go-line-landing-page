@@ -1,0 +1,98 @@
+/* ============================
+   RTL (Arabic) Layout Overrides
+   Applied when html[dir="rtl"]
+   ============================ */
+
+[dir="rtl"] body {
+  font-family: "Cairo", "Tajawal", "Noto Sans Arabic", "Poppins", sans-serif;
+  text-align: right;
+}
+
+/* Navbar */
+[dir="rtl"] .navbar-links {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .dropdown {
+  left: auto;
+  right: 0;
+}
+
+/* Footer arrows & flex */
+[dir="rtl"] .footer-menu li a {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .footer-menu i {
+  transform: scaleX(-1);
+}
+
+/* Crumbs breadcrumbs */
+[dir="rtl"] .crumbs {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .crumbs .fa-right-long {
+  transform: scaleX(-1);
+}
+
+/* Paragraph bullet lists */
+[dir="rtl"] .paragraph li {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .paragraph h5 {
+  text-align: right;
+}
+
+/* Work cards step numbers */
+[dir="rtl"] .work-card h4 {
+  text-align: right;
+}
+
+/* Blog / News data rows */
+[dir="rtl"] .data {
+  flex-direction: row-reverse;
+}
+
+/* Form inputs */
+[dir="rtl"] .name-form {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .name-form input,
+[dir="rtl"] textarea {
+  text-align: right;
+}
+
+/* Contact address */
+[dir="rtl"] .address {
+  text-align: right;
+}
+
+/* Footer two */
+[dir="rtl"] .footer-two {
+  flex-direction: row-reverse;
+}
+
+/* Header bar-menu side */
+[dir="rtl"] .header-style {
+  flex-direction: row-reverse;
+}
+
+/* Mobile menu */
+[dir="rtl"] .main-menu ul li a {
+  text-align: right;
+}
+
+/* Subscribe form */
+[dir="rtl"] .get-the-menu form {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .get-the-menu input {
+  text-align: right;
+}
+
+/* Arabic Google Font import */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap");

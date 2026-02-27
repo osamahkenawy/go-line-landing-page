@@ -173,7 +173,7 @@
         height: 100%;
     }
     .counter-blog .counter-img-data {
-        width: 45%;
+        width: 320px;
         margin-left: 0;
         margin-right: 20px;
     }
@@ -532,7 +532,7 @@
         display: flex;
     }
     .mobile-nav{
-        width: 45%;
+        width: 320px;
     }
     .menu-inner{
         width: 52%;

@@ -1,6 +1,9 @@
 import Layout from "@/src/layouts/Layout";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const BecomePartner = () => {
+  const { t } = useTranslation("common");
   return (
     <Layout headerExtaClass={"two"}>
       <section
@@ -18,63 +21,41 @@ const BecomePartner = () => {
               <div className="about-text">
                 <ul className="crumbs d-flex">
                   <li>
-                    <Link href="/">Home</Link>
+                    <Link href="/">{t("breadcrumbs.home")}</Link>
                   </li>
                   <li className="two">
                     <Link href="/">
                       <i className="fa-solid fa-right-long" />
-                      Blog
+                      {t("breadcrumbs.becomePartner")}
                     </Link>
                   </li>
                 </ul>
-                <h2>Join the Go-Line network today</h2>
-                <p>
-                  Whether you&apos;re a delivery driver or a business owner —
-                  Go-Line has a place for you. Apply now and start earning or
-                  growing.
-                </p>
+                <h2>{t("partner.heroTitle")}</h2>
+                <p>{t("partner.heroSubtitle")}</p>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="join-courier">
-                <h3>Apply as a Driver or Business Partner</h3>
-                <p>
-                  Fill in the form below and our team will review your
-                  application and get back to you within 48 hours.
-                </p>
+                <h3>{t("partner.formTitle")}</h3>
+                <p>{t("partner.formSubtitle")}</p>
                 <form
                   onSubmit={(e) => e.preventDefault()}
                   className="blog-form"
                 >
                   <div className="name-form">
                     <i className="fa-regular fa-user" />
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Enter your name"
-                    />
+                    <input type="text" name="name" placeholder={t("partner.namePlaceholder")} />
                   </div>
                   <div className="name-form">
                     <i className="fa-solid fa-phone" />
-                    <input
-                      type="text"
-                      name="phone"
-                      placeholder="Enter your phone"
-                    />
+                    <input type="text" name="phone" placeholder={t("partner.phonePlaceholder")} />
                   </div>
                   <div className="name-form">
                     <i className="fa-regular fa-envelope" />
-                    <input
-                      type="text"
-                      name="email"
-                      placeholder="Enter your email"
-                    />
+                    <input type="text" name="email" placeholder={t("partner.emailPlaceholder")} />
                   </div>
-                  <textarea
-                    placeholder="Enter your message"
-                    defaultValue={""}
-                  />
-                  <button className="button-price">Submit Application</button>
+                  <textarea placeholder={t("partner.messagePlaceholder")} defaultValue={""} />
+                  <button className="button-price">{t("partner.submitBtn")}</button>
                 </form>
               </div>
             </div>
@@ -91,12 +72,8 @@ const BecomePartner = () => {
               data-aos-duration={400}
             >
               <div className="benefit-text">
-                <h2>Benefits of joining Go-Line</h2>
-                <p>
-                  Our partners enjoy competitive pay, flexible hours, and full
-                  support from our dedicated operations team. Join hundreds of
-                  drivers and businesses already growing with Go-Line.
-                </p>
+                <h2>{t("partner.benefitsTitle")}</h2>
+                <p>{t("partner.benefitsDesc")}</p>
               </div>
             </div>
           </div>
@@ -112,14 +89,8 @@ const BecomePartner = () => {
               data-aos-duration={300}
             >
               <div className="team-description">
-                <h4>
-                  <i className="fa-solid fa-people-group" />
-                  Supportive Team
-                </h4>
-                <p>
-                  Our operations and driver support teams are available 7 days
-                  a week to assist with any questions or delivery issues.
-                </p>
+                <h4><i className="fa-solid fa-people-group" />{t("partner.benefit1Title")}</h4>
+                <p>{t("partner.benefit1Desc")}</p>
               </div>
             </div>
             <div
@@ -129,15 +100,8 @@ const BecomePartner = () => {
               data-aos-duration={400}
             >
               <div className="team-description">
-                <h4>
-                  <i className="fa-regular fa-calendar-days" />
-                  Flexible Schedule
-                </h4>
-                <p>
-                  Drivers choose their own working hours. Work full-time or
-                  part-time — the choice is yours. Our platform makes it easy
-                  to manage deliveries on your terms.
-                </p>
+                <h4><i className="fa-regular fa-calendar-days" />{t("partner.benefit2Title")}</h4>
+                <p>{t("partner.benefit2Desc")}</p>
               </div>
             </div>
             <div
@@ -147,13 +111,8 @@ const BecomePartner = () => {
               data-aos-duration={500}
             >
               <div className="team-description">
-                <h4>
-                  <i className="fa-solid fa-briefcase" />
-                  Dedicated Account Manager
-                </h4>
-                <p>
-                  Every business partner gets a personal account manager to handle onboarding, billing, and daily operational support.
-                </p>
+                <h4><i className="fa-solid fa-briefcase" />{t("partner.benefit3Title")}</h4>
+                <p>{t("partner.benefit3Desc")}</p>
               </div>
             </div>
             <div
@@ -163,13 +122,8 @@ const BecomePartner = () => {
               data-aos-duration={300}
             >
               <div className="team-description end">
-                <h4>
-                  <i className="fa-solid fa-money-bill-1-wave" />
-                  Competitive Revenue Share
-                </h4>
-                <p>
-                  Drivers earn competitive per-delivery rates with weekly payouts. Business partners benefit from volume pricing and invoice-based billing.
-                </p>
+                <h4><i className="fa-solid fa-money-bill-1-wave" />{t("partner.benefit4Title")}</h4>
+                <p>{t("partner.benefit4Desc")}</p>
               </div>
             </div>
             <div
@@ -179,13 +133,8 @@ const BecomePartner = () => {
               data-aos-duration={400}
             >
               <div className="team-description end">
-                <h4>
-                  <i className="fa-solid fa-arrow-up-right-dots" />
-                  Business Growth Tools
-                </h4>
-                <p>
-                  Access analytics dashboards, delivery reports, and performance insights to optimize your shipping strategy and reduce costs.
-                </p>
+                <h4><i className="fa-solid fa-arrow-up-right-dots" />{t("partner.benefit5Title")}</h4>
+                <p>{t("partner.benefit5Desc")}</p>
               </div>
             </div>
             <div
@@ -195,13 +144,8 @@ const BecomePartner = () => {
               data-aos-duration={500}
             >
               <div className="team-description end">
-                <h4>
-                  <i className="fa-solid fa-folder-open" />
-                  End-to-End Support
-                </h4>
-                <p>
-                  From API integration to SLA management, our team provides full technical and operational support to keep your deliveries running smoothly.
-                </p>
+                <h4><i className="fa-solid fa-folder-open" />{t("partner.benefit6Title")}</h4>
+                <p>{t("partner.benefit6Desc")}</p>
               </div>
             </div>
           </div>
@@ -227,25 +171,17 @@ const BecomePartner = () => {
               data-aos-duration={400}
             >
               <div className="join-the">
-                <h2>Common questions about joining Go-Line</h2>
-                <p>
-                  Not sure how to get started? Here are quick answers to the most common questions from drivers and business partners.
-                </p>
+                <h2>{t("partner.joinTitle")}</h2>
+                <p>{t("partner.joinDesc")}</p>
               </div>
               <div className="counter-blog">
                 <div className="counter-img-data">
                   <h2>500+</h2>
-                  <span>
-                    Active<br />
-                    Drivers
-                  </span>
+                  <span>{t("partner.activeDrivers")}</span>
                 </div>
                 <div className="counter-img-data">
                   <h2>50+</h2>
-                  <span>
-                    Delivery<br />
-                    Zones
-                  </span>
+                  <span>{t("partner.deliveryZones")}</span>
                 </div>
               </div>
             </div>
@@ -267,14 +203,9 @@ const BecomePartner = () => {
                   {" "}
                   <a href="#">logistics</a> <a href="#">go-line</a>
                 </div>
-                <h3>Go-Line Expands Coverage to 10 New Cities</h3>
-                <p>
-                  We are proud to announce our expansion into 10 additional cities across the Kingdom, bringing fast last-mile delivery to more businesses than ever.
-                </p>{" "}
-                <Link href="/single-blog">
-                  Read More
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
+                <h3>{t("partner.news1Title")}</h3>
+                <p>{t("partner.news1Excerpt")}</p>{" "}
+                <Link href="/single-blog">{t("partner.readMore")}<i className="fa-solid fa-arrow-right" /></Link>
                 <ul className="data">
                   <li>
                     <h6>
@@ -309,14 +240,9 @@ const BecomePartner = () => {
                   {" "}
                   <a href="#">partners</a> <a href="#">go-line</a>
                 </div>
-                <h3>How Businesses Are Cutting Shipping Costs with Go-Line</h3>
-                <p>
-                  Our business partners report up to 30% savings on delivery costs after switching to Go-Line's consolidated shipping model...
-                </p>{" "}
-                <Link href="/single-blog">
-                  Read More
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
+                <h3>{t("partner.news2Title")}</h3>
+                <p>{t("partner.news2Excerpt")}</p>{" "}
+                <Link href="/single-blog">{t("partner.readMore")}<i className="fa-solid fa-arrow-right" /></Link>
                 <ul className="data">
                   <li>
                     <h6>
@@ -351,14 +277,9 @@ const BecomePartner = () => {
                   {" "}
                   <a href="#">drivers</a> <a href="#">go-line</a>
                 </div>
-                <h3>500+ Active Drivers Now on the Go-Line Network!</h3>
-                <p>
-                  Our driver community has surpassed 500 active members, providing faster pickups and broader coverage across all major zones...
-                </p>{" "}
-                <Link href="/single-blog">
-                  Read More
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
+                <h3>{t("partner.news3Title")}</h3>
+                <p>{t("partner.news3Excerpt")}</p>{" "}
+                <Link href="/single-blog">{t("partner.readMore")}<i className="fa-solid fa-arrow-right" /></Link>
                 <ul className="data">
                   <li>
                     <h6>
@@ -388,10 +309,7 @@ const BecomePartner = () => {
               data-aos-duration={400}
             >
               {" "}
-              <Link href="/blog" className="button button-2 non">
-                See All
-                <i className="fa-solid fa-arrow-right" />
-              </Link>
+              <Link href="/blog" className="button button-2 non">{t("partner.seeAll")}<i className="fa-solid fa-arrow-right" /></Link>
             </div>
           </div>
         </div>
@@ -400,3 +318,9 @@ const BecomePartner = () => {
   );
 };
 export default BecomePartner;
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});

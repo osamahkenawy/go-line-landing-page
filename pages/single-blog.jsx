@@ -1,6 +1,9 @@
 import Layout from "@/src/layouts/Layout";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const SingleBlog = () => {
+  const { t } = useTranslation("common");
   return (
     <Layout>
       <section
@@ -16,18 +19,18 @@ const SingleBlog = () => {
               <div className="about-text">
                 <ul className="crumbs d-flex">
                   <li>
-                    <Link href="/">Home</Link>
+                    <Link href="/">{t("breadcrumbs.home")}</Link>
                   </li>
                   <li>
                     <Link href="/">
                       <i className="fa-solid fa-right-long" />
-                      blog
+                      {t("nav.blog")}
                     </Link>
                   </li>
                   <li className="two">
                     <Link href="/">
                       <i className="fa-solid fa-right-long" />
-                      Single Blog Page
+                      {t("breadcrumbs.singleBlog")}
                     </Link>
                   </li>
                 </ul>
@@ -35,7 +38,7 @@ const SingleBlog = () => {
                   {" "}
                   <a href="#">restaurants</a> <a href="#">cooking</a>
                 </div>
-                <h2>127+ Couriers On Our Team!</h2>
+                <h2>{t("singleBlog.heroTitle")}</h2>
                 <ul className="data">
                   <li>
                     <h6>
@@ -55,8 +58,8 @@ const SingleBlog = () => {
             <div className="col-lg-2">
               <div className="name-dedails">
                 <img alt="girl" src="assets/img/girl.jpg" />
-                <h6>Roxie Gilbert</h6>
-                <span>press contact Go-Line</span>
+                <h6>{t("singleBlog.authorName")}</h6>
+                <span>{t("singleBlog.authorRole")}</span>
               </div>
             </div>
             <div className="col-lg-12">
@@ -128,7 +131,7 @@ const SingleBlog = () => {
                       </h4>
                     </div>
                   </div>
-                  <h6>Francis Scott Key Fitzgerald "The Great Gatsby"</h6>
+                  <h6>{t("singleBlog.quoteAuthor")}</h6>
                 </div>
                 <h3>
                   H3 Massa massa ultricies mi quis hendrerit. Sed enim ut sem
@@ -181,7 +184,7 @@ const SingleBlog = () => {
                   tempor. Pulvinar elementum integer enim neque volutpat ac
                   tincidunt vitae semper.
                 </p>
-                <h6 className="data">Updated: December 26, 2022</h6>
+                <h6 className="data">{t("singleBlog.updatedLabel")}</h6>
                 <div className="quickeat tags">
                   {" "}
                   <a href="#">restaurants</a> <a href="#">cooking</a>
@@ -193,18 +196,17 @@ const SingleBlog = () => {
                     <div className="previous-posts">
                       <img alt="img" src="assets/img/author-posts-1.jpg" />
                       <div>
-                        <h6>
-                          How Restaurants Can Engage with Millennials in 2022
-                        </h6>{" "}
-                        <a href="#">Prev. Posts by this author</a>
+                        <h6>{t("singleBlog.prevPostTitle")}</h6>{" "}
+                        <a href="#">{t("singleBlog.prevPostsLabel")}</a>
                       </div>
+                    </div>
                     </div>
                   </div>
                   <div className="col-lg-4">
                     <div className="name-dedails">
                       <img alt="girl" src="assets/img/girl.jpg" />
-                      <h6>Roxie Gilbert</h6>
-                      <span>press contact Go-Line</span>
+                    <h6>{t("singleBlog.authorName")}</h6>
+                    <span>{t("singleBlog.authorRole")}</span>
                       <ul className="social-media">
                         <li>
                           {" "}
@@ -230,8 +232,8 @@ const SingleBlog = () => {
                   <div className="col-lg-4">
                     <div className="previous-posts next">
                       <div>
-                        <h6>Why You Should Optimize Your Menu for Delivery</h6>{" "}
-                        <a href="#">Next Post by this author</a>
+                        <h6>{t("singleBlog.nextPostTitle")}</h6>{" "}
+                        <a href="#">{t("singleBlog.nextPostLabel")}</a>
                       </div>
                       <img alt="img" src="assets/img/author-posts-2.jpg" />
                     </div>
@@ -239,9 +241,7 @@ const SingleBlog = () => {
                 </div>
               </div>
               <div className="comment">
-                <h2>
-                  <span>9</span> Comments
-                </h2>
+                <h2><span>9</span> {t("singleBlog.commentsTitle")}</h2>
               </div>
               <ul className="comment gap no-top">
                 <li>
@@ -257,7 +257,7 @@ const SingleBlog = () => {
                     </p>{" "}
                     <a href="#">
                       <span>
-                        Reply
+                        {t("singleBlog.replyLabel")}
                         <i className="fa-solid fa-reply" />
                       </span>
                     </a>
@@ -279,7 +279,7 @@ const SingleBlog = () => {
                     </p>{" "}
                     <a href="#">
                       <span>
-                        Reply
+                        {t("singleBlog.replyLabel")}
                         <i className="fa-solid fa-reply" />
                       </span>
                     </a>
@@ -302,7 +302,7 @@ const SingleBlog = () => {
                     </p>{" "}
                     <a href="#">
                       <span>
-                        Reply
+                        {t("singleBlog.replyLabel")}
                         <i className="fa-solid fa-reply" />
                       </span>
                     </a>
@@ -326,7 +326,7 @@ const SingleBlog = () => {
                     </p>{" "}
                     <a href="#">
                       <span>
-                        Reply
+                        {t("singleBlog.replyLabel")}
                         <i className="fa-solid fa-reply" />
                       </span>
                     </a>
@@ -343,7 +343,7 @@ const SingleBlog = () => {
                   {" "}
                   <a href="#">
                     <h6>
-                      Hide
+                      {t("singleBlog.hideLabel")}
                       <i className="fa-solid fa-angle-up" />
                     </h6>
                   </a>
@@ -361,7 +361,7 @@ const SingleBlog = () => {
                     </p>{" "}
                     <a href="#">
                       <span>
-                        Reply
+                        {t("singleBlog.replyLabel")}
                         <i className="fa-solid fa-reply" />
                       </span>
                     </a>
@@ -375,53 +375,43 @@ const SingleBlog = () => {
                   </div>
                 </li>
                 <li className="show-all-button">
-                  <h6>
-                    4 more answers{" "}
-                    <a href="#">
-                      <span>
-                        Show All
-                        <i className="fa-solid fa-angle-down" />
-                      </span>
-                    </a>
-                  </h6>
+                  <h6>4 <a href="#"><span>{t("singleBlog.showAll")}<i className="fa-solid fa-angle-down" /></span></a></h6>
                 </li>
                 <li>
                   <div className="button-gap">
                     {" "}
                     <a href="#" className="button button-2 non">
-                      See all comments
+                      {t("singleBlog.seeAllComments")}
                       <i className="fa-solid fa-angle-down" />
                     </a>
                   </div>
                 </li>
               </ul>
               <div className="comment">
-                <h2>Leave your comment</h2>
-                <form
-                  onSubmit={(e) => e.preventDefault()}
-                  className="comment-blog"
-                >
-                  <textarea placeholder="Enter you comment" defaultValue={""} />
+                <h2>{t("singleBlog.leaveComment")}</h2>
+                <form onSubmit={(e) => e.preventDefault()} className="comment-blog">
+                  <textarea placeholder={t("singleBlog.commentPlaceholder")} defaultValue={""} />
                   <div className="row">
                     <div className="col-lg-6">
-                      <input type="text" name="name" placeholder="Your Name" />
+                      <input type="text" name="name" placeholder={t("singleBlog.namePlaceholder")} />
                     </div>
                     <div className="col-lg-6">
-                      <input
-                        type="text"
-                        name="Email"
-                        placeholder="Email Address"
-                      />
+                      <input type="text" name="Email" placeholder={t("singleBlog.emailPlaceholder")} />
                     </div>
                   </div>
-                  <button className="button-price">Publish a comment</button>
+                  <button className="button-price">{t("singleBlog.submitComment")}</button>
                 </form>
               </div>
             </div>
           </div>
-        </div>
       </section>
     </Layout>
   );
 };
 export default SingleBlog;
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});

@@ -277,6 +277,7 @@ select.nice-select + div.nice-select + div.nice-select {
     position: absolute;
     top: 67%;
     width: 50%;
+    margin: 10px;
 }
 .wilmington.location-restaurant {
     top: 28%;
@@ -1807,7 +1808,7 @@ header.two {
 .sit-at-img .counter-img-data {
     bottom: 18%;
     position: absolute;
-    width: 30%;
+    width: 280px;
     right: 0;
 }
 .sit-at-home-description h2{
@@ -2969,7 +2970,7 @@ body.menu-layer:before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 30%;
+    width: 280px;
     height: 100%;
     background-color: white;
     padding: 50px 40px 15px;

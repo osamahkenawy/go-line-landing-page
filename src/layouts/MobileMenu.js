@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslation } from "next-i18next";
 
 const MobileMenu = () => {
+  const { t } = useTranslation("common");
   const [activeMenu, setActiveMenu] = useState("");
   const activeMenuSet = (value) =>
       setActiveMenu(activeMenu === value ? "" : value),
@@ -9,50 +11,51 @@ const MobileMenu = () => {
   return (
     <ul>
       <li>
-        <Link href="/">Home</Link>
+        <Link href="/">{t("nav.home")}</Link>
       </li>
       <li>
-        <Link href="about">About Us</Link>
+        <Link href="about">{t("nav.about")}</Link>
       </li>
       <li className={`menu-item-has-children ${activeLi("Services")}`}>
         <a href="#" onClick={() => activeMenuSet("Services")}>
-          Services
+          {t("nav.services")}
         </a>
         <ul className="sub-menu">
           <li>
-            <Link href="services">All Services</Link>
+            <Link href="services">{t("nav.allServices")}</Link>
           </li>
           <li>
-            <Link href="pricing-table">Pricing</Link>
+            <Link href="pricing-table">{t("nav.pricing")}</Link>
           </li>
           <li>
-            <Link href="become-partner">Become A Partner</Link>
+            <Link href="become-partner">{t("nav.becomePartner")}</Link>
           </li>
         </ul>
       </li>
       <li className={`menu-item-has-children ${activeLi("Pages")}`}>
         <a href="#" onClick={() => activeMenuSet("Pages")}>
-          Pages
+          {t("nav.pages")}
         </a>
         <ul className="sub-menu">
           <li>
-            <Link href="blog">Blog</Link>
+            <Link href="blog">{t("nav.blog")}</Link>
           </li>
           <li>
-            <Link href="single-blog">Single Article</Link>
+            <Link href="single-blog">{t("nav.singleArticle")}</Link>
           </li>
           <li>
-            <Link href="faq">FAQ</Link>
+            <Link href="faq">{t("nav.faq")}</Link>
           </li>
           <li>
-            <Link href="404">404</Link>
+            <Link href="404">{t("nav.error404")}</Link>
           </li>
         </ul>
       </li>
       <li>
-        <Link href="contacts">Contacts</Link>
+        <Link href="contacts">{t("nav.contacts")}</Link>
       </li>
     </ul>
   );
 };
 export default MobileMenu;
+

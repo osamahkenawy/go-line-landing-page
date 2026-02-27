@@ -1,9 +1,12 @@
 import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
 import PreLoader from "@/src/layouts/PreLoader";
+import { appWithTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import "@/styles/globals.css";
+import "@/styles/rtl.css";
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   const [preLoader, setPreLoader] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -24,3 +27,5 @@ export default function App({ Component, pageProps }) {
     </Fragment>
   );
 }
+
+export default appWithTranslation(App);

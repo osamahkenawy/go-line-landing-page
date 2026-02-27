@@ -1,6 +1,9 @@
 import Layout from "@/src/layouts/Layout";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const E404 = () => {
+  const { t } = useTranslation("common");
   return (
     <Layout>
       <section className="error-section">
@@ -15,7 +18,7 @@ const E404 = () => {
               <input
                 type="text"
                 name="email"
-                placeholder="Enter query keywords"
+                placeholder={t("notFound.searchPlaceholder")}
               />
               <button className="button button-2">
                 <i className="fa-solid fa-magnifying-glass" />
@@ -28,13 +31,12 @@ const E404 = () => {
               data-aos-delay={300}
               data-aos-duration={400}
             />
-            <h2>404</h2>
+            <h2>{t("notFound.title")}</h2>
             <h4 data-aos="flip-up" data-aos-delay={400} data-aos-duration={500}>
-              Sorry, we were unuble to find that page
+              {t("notFound.heading")}
             </h4>
             <p data-aos="flip-up" data-aos-delay={600} data-aos-duration={700}>
-              Varius sit amet mattis vulputate enim nulla aliquet porttitor.
-              <br /> Elementum nibh tellus molestie nunc.
+              {t("notFound.message")}
             </p>
             <Link href="/">
               <i className="fa-solid fa-house" />
@@ -46,3 +48,9 @@ const E404 = () => {
   );
 };
 export default E404;
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});

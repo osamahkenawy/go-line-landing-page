@@ -3,7 +3,11 @@ import Layout from "@/src/layouts/Layout";
 import { sliderProps } from "@/src/sliderProps";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 const Index = () => {
+  const { t } = useTranslation("common");
   return (
     <Layout>
       <section
@@ -13,38 +17,34 @@ const Index = () => {
         <div className="container">
           <div className="row align-items-center">
             <div
-              className="col-lg-6"
+              className="col-lg-6 col-md-12 col-sm-12"
               data-aos="fade-up"
               data-aos-delay={200}
               data-aos-duration={300}
             >
               <div className="restaurant">
-                <h1>Fast, Reliable Last-Mile Delivery Service</h1>
-                <p>
-                  Go-Line connects businesses with trusted couriers —
-                  delivering packages across 50+ zones with speed, safety, and
-                  full tracking visibility.
-                </p>
+                <h1>{t("home.heroTitle")}</h1>
+                <p>{t("home.heroSubtitle")}</p>
                 <div className="nice-select-one">
                   <Link href="contacts" className="button button-2">
-                    Get a Quote
+                    {t("home.getQuote")}
                   </Link>{" "}
                   <Link href="services" className="button button-2" style={{ marginLeft: 12 }}>
-                    Our Services <i className="fa-solid fa-arrow-right" />
+                    {t("home.ourServices")} <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </div>
               </div>
             </div>
             <div
-              className="col-lg-6"
+              className="col-lg-6 col-md-12 col-sm-12"
               data-aos="fade-up"
               data-aos-delay={300}
               data-aos-duration={400}
             >
               <div className="img-restaurant">
-                <img alt="man" src="assets/img/photo-1.png" />
+                <img alt="man" src="assets/img/photo-1-go-line.jpg" />
                 <div className="wilmington">
-                  <img alt="img" src="assets/img/photo-2.jpg" />
+                  {/* <img alt="img" src="assets/img/photo-2.jpg" /> */}
                   <div>
                     <p>Delivery of the Day</p>
                     <h6>Express Shipment</h6>
@@ -60,8 +60,8 @@ const Index = () => {
                 <div className="wilmington location-restaurant">
                   <i className="fa-solid fa-location-dot" />
                   <div>
-                    <h6>50+ Zones</h6>
-                    <p>Covered Nationwide</p>
+                    <h6>{t("home.zonesLabel")}</h6>
+                    <p>{t("home.zonesCovered")}</p>
                   </div>
                 </div>
               </div>
@@ -78,11 +78,8 @@ const Index = () => {
             data-aos-delay={200}
             data-aos-duration={300}
           >
-            <h2>How It Works</h2>
-            <p>
-              Shipping with Go-Line is simple and transparent. From pickup to
-              <br /> delivery — every step tracked in real time.
-            </p>
+            <h2>{t("home.howItWorksTitle")}</h2>
+            <p>{t("home.howItWorksSubtitle")}</p>
           </div>
           <div className="row ">
             <div
@@ -92,15 +89,11 @@ const Index = () => {
               data-aos-duration={300}
             >
               <div className="work-card">
-                <img alt="img" src="assets/img/Illustration-1.png" />
+                <img alt="img" src="assets/img/Illustration-1.jpg" />
                 <h4>
-                  <span>01</span> Place Your Order
+                  <span>01</span> {t("home.step1Title")}
                 </h4>
-                <p>
-                  Submit your delivery request online or via phone. Tell us the
-                  pickup location, destination, and package details — we handle
-                  the rest.
-                </p>
+                <p>{t("home.step1Desc")}</p>
               </div>
             </div>
             <div
@@ -110,15 +103,11 @@ const Index = () => {
               data-aos-duration={400}
             >
               <div className="work-card">
-                <img alt="img" src="assets/img/Illustration-2.png" />
+                <img alt="img" src="assets/img/Illustration-2.jpg" />
                 <h4>
-                  <span>02</span> We Pick It Up
+                  <span>02</span> {t("home.step2Title")}
                 </h4>
-                <p>
-                  Our trained courier picks up your package from your location
-                  promptly. We scan, verify, and secure every shipment before
-                  dispatch.
-                </p>
+                <p>{t("home.step2Desc")}</p>
               </div>
             </div>
             <div
@@ -128,15 +117,11 @@ const Index = () => {
               data-aos-duration={500}
             >
               <div className="work-card">
-                <img alt="img" src="assets/img/illustration-3.png" />
+                <img alt="img" src="assets/img/Illustration-3.jpg" />
                 <h4>
-                  <span>03</span> Fast Delivery
+                  <span>03</span> {t("home.step3Title")}
                 </h4>
-                <p>
-                  Your package is delivered to its destination with real-time
-                  tracking updates. Recipient confirms delivery and you get an
-                  instant notification.
-                </p>
+                <p>{t("home.step3Desc")}</p>
               </div>
             </div>
           </div>
@@ -150,21 +135,18 @@ const Index = () => {
         <div className="container">
           <div className="row align-items-center">
             <div
-              className="col-lg-6"
+              className="col-lg-6 col-md-12 col-sm-12"
               data-aos="flip-up"
               data-aos-delay={200}
               data-aos-duration={300}
             >
               <div className="city-restaurants">
-                <h2>Why Businesses Choose Go-Line</h2>
-                <p>
-                  We combine technology, trained couriers, and deep local
-                  knowledge to deliver results you can count on.
-                </p>
+                <h2>{t("home.whyTitle")}</h2>
+                <p>{t("home.whySubtitle")}</p>
               </div>
             </div>
             <div
-              className="col-lg-6"
+              className="col-lg-6 col-md-12 col-sm-12"
               data-aos="flip-up"
               data-aos-delay={300}
               data-aos-duration={400}
@@ -172,7 +154,7 @@ const Index = () => {
               <div className="logos-card">
                 <img alt="logo" src="assets/img/logos-2.jpg" />
                 <div className="cafa">
-                  <h4>Real-Time Tracking</h4>
+                  <h4>{t("home.feature1Title")}</h4>
                   <div>
                     <i className="fa-solid fa-star" />
                     <i className="fa-solid fa-star" />
@@ -182,21 +164,18 @@ const Index = () => {
                   </div>
                   <div className="cafa-button">
                     {" "}
-                    <a href="#">GPS Tracking</a> <a href="#">Live Updates</a>{" "}
+                    <a href="#">{t("home.feature1Tag1")}</a>{" "}
+                    <a href="#">{t("home.feature1Tag2")}</a>{" "}
                     <a className="end" href="#">
-                      Notifications
+                      {t("home.feature1Tag3")}
                     </a>
                   </div>
-                  <p>
-                    Track every shipment in real time with our smart dashboard.
-                    Get instant SMS and email notifications at every delivery
-                    milestone.
-                  </p>
+                  <p>{t("home.feature1Desc")}</p>
                 </div>
               </div>
             </div>
             <div
-              className="col-lg-6"
+              className="col-lg-6 col-md-12 col-sm-12"
               data-aos="flip-up"
               data-aos-delay={400}
               data-aos-duration={500}
@@ -204,7 +183,7 @@ const Index = () => {
               <div className="logos-card two">
                 <img alt="logo" src="assets/img/logos-1.jpg" />
                 <div className="cafa">
-                  <h4>Nationwide Coverage</h4>
+                  <h4>{t("home.feature2Title")}</h4>
                   <div>
                     <i className="fa-solid fa-star" />
                     <i className="fa-solid fa-star" />
@@ -214,20 +193,18 @@ const Index = () => {
                   </div>
                   <div className="cafa-button">
                     {" "}
-                    <a href="#">50+ Zones</a> <a href="#">Same-Day</a>{" "}
+                    <a href="#">{t("home.feature2Tag1")}</a>{" "}
+                    <a href="#">{t("home.feature2Tag2")}</a>{" "}
                     <a className="end" href="#">
-                      Cross-City
+                      {t("home.feature2Tag3")}
                     </a>
                   </div>
-                  <p>
-                    Our delivery network spans 50+ zones across the country.
-                    Whether local or cross-city, we get it there fast.
-                  </p>
+                  <p>{t("home.feature2Desc")}</p>
                 </div>
               </div>
             </div>
             <div
-              className="col-lg-6"
+              className="col-lg-6 col-md-12 col-sm-12"
               data-aos="flip-up"
               data-aos-delay={500}
               data-aos-duration={600}
@@ -235,7 +212,7 @@ const Index = () => {
               <div className="logos-card three">
                 <img alt="logo" src="assets/img/logos-3.jpg" />
                 <div className="cafa">
-                  <h4>Dedicated Support</h4>
+                  <h4>{t("home.feature3Title")}</h4>
                   <div>
                     <i className="fa-solid fa-star" />
                     <i className="fa-solid fa-star" />
@@ -245,22 +222,20 @@ const Index = () => {
                   </div>
                   <div className="cafa-button">
                     {" "}
-                    <a href="#">24/7 Support</a> <a href="#">Dedicated Agent</a>{" "}
+                    <a href="#">{t("home.feature3Tag1")}</a>{" "}
+                    <a href="#">{t("home.feature3Tag2")}</a>{" "}
                     <a className="end" href="#">
-                      Fast Response
+                      {t("home.feature3Tag3")}
                     </a>
                   </div>
-                  <p>
-                    Our customer support team is available around the clock to
-                    assist with any delivery concerns or urgent requests.
-                  </p>
+                  <p>{t("home.feature3Desc")}</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="button-gap">
             <Link href="services" className="button button-2 non">
-              All Services
+              {t("home.allServicesBtn")}
               <i className="fa-solid fa-arrow-right" />
             </Link>
           </div>
@@ -274,7 +249,7 @@ const Index = () => {
         <div className="container">
           <div className="row align-items-center">
             <div
-              className="col-lg-5"
+              className="col-lg-5 col-md-12 col-sm-12"
               data-aos="fade-up"
               data-aos-delay={200}
               data-aos-duration={300}
@@ -283,33 +258,29 @@ const Index = () => {
                 <img alt="img" src="assets/img/photo-3.png" />{" "}
                 <a href="#" className="one">
                   <i className="fa-solid fa-bolt" />
-                  Express
+                  {t("home.tagExpress")}
                 </a>{" "}
                 <a href="#" className="two">
                   <i className="fa-solid fa-calendar-day" />
-                  Same-Day
+                  {t("home.tagSameDay")}
                 </a>{" "}
                 <a href="#" className="three">
                   <i className="fa-solid fa-boxes-stacked" />
-                  Bulk
+                  {t("home.tagBulk")}
                 </a>
               </div>
             </div>
             <div
-              className="col-lg-6 offset-lg-1"
+              className="col-lg-6 offset-lg-1 col-md-12 col-sm-12"
               data-aos="fade-up"
               data-aos-delay={300}
               data-aos-duration={400}
             >
               <div className="food-content-section">
-                <h2>Delivery solutions tailored for your business needs</h2>
-                <p>
-                  Whether you ship 10 parcels or 10,000 — Go-Line has a plan
-                  that fits. Scale your delivery operations effortlessly with
-                  our flexible service tiers.
-                </p>{" "}
+                <h2>{t("home.solutionsTitle")}</h2>
+                <p>{t("home.solutionsDesc")}</p>{" "}
                 <Link href="services" className="button button-2">
-                  Explore Services
+                  {t("home.exploreServices")}
                 </Link>
               </div>
             </div>
@@ -327,7 +298,7 @@ const Index = () => {
               data-aos-duration={300}
             >
               <div>
-                <h2>Delivering excellence, every shipment.</h2>
+                <h2>{t("home.counterTitle")}</h2>
               </div>
             </div>
             <div
@@ -344,11 +315,7 @@ const Index = () => {
                 >
                   5000
                 </h2>
-                <p>
-                  Successful
-                  <br />
-                  Deliveries
-                </p>
+                <p>{t("home.counter1Label")}</p>
               </div>
             </div>
             <div
@@ -365,11 +332,7 @@ const Index = () => {
                 >
                   50
                 </h2>
-                <p>
-                  Zones
-                  <br />
-                  Covered
-                </p>
+                <p>{t("home.counter2Label")}</p>
               </div>
             </div>
             <div
@@ -387,11 +350,7 @@ const Index = () => {
                   200
                 </h2>
                 <span>+</span>
-                <p>
-                  Business
-                  <br />
-                  Partners
-                </p>
+                <p>{t("home.counter3Label")}</p>
               </div>
             </div>
           </div>
@@ -408,20 +367,15 @@ const Index = () => {
               data-aos-duration={300}
             >
               <div className="reviews-content">
-                <h2>What customers say about us</h2>
+                <h2>{t("home.reviewsTitle")}</h2>
                 <div className="custome owl-carousel">
                   <Swiper {...sliderProps.index1Testmoninal}>
                     <SwiperSlide className="item">
-                      <h4>
-                        “Go-Line transformed our e-commerce business. Our
-                        customers now receive their orders the same day in most
-                        zones. The tracking system is outstanding and the team
-                        is always responsive.”
-                      </h4>
+                      <h4>{t("home.review1Text")}</h4>
                       <div className="thomas">
                         <img alt="client" src="assets/img/photo-5.jpg" />
                         <div>
-                          <h6>Ahmed Al-Rashidi — E-Commerce Manager</h6>
+                          <h6>{t("home.review1Author")}</h6>
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
@@ -431,16 +385,11 @@ const Index = () => {
                       </div>
                     </SwiperSlide>
                     <SwiperSlide className="item">
-                      <h4>
-                        “We ship hundreds of parcels weekly and Go-Line handles
-                        every single one without a hitch. Their dedicated
-                        account manager keeps us updated at every stage. Highly
-                        recommended for growing businesses.”
-                      </h4>
+                      <h4>{t("home.review2Text")}</h4>
                       <div className="thomas">
                         <img alt="client" src="assets/img/man-2.jpg" />
                         <div>
-                          <h6>Sara Khalid — Operations Director</h6>
+                          <h6>{t("home.review2Author")}</h6>
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
@@ -450,15 +399,11 @@ const Index = () => {
                       </div>
                     </SwiperSlide>
                     <SwiperSlide className="item">
-                      <h4>
-                        “The best courier service I have used. Fast pickups,
-                        real-time tracking, and zero damaged packages. Go-Line
-                        is now the backbone of our fulfillment operation.”
-                      </h4>
+                      <h4>{t("home.review3Text")}</h4>
                       <div className="thomas">
                         <img alt="client" src="assets/img/photo-5.jpg" />
                         <div>
-                          <h6>Khaled Bin Nasser — Retail Business Owner</h6>
+                          <h6>{t("home.review3Author")}</h6>
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
                           <i className="fa-solid fa-star" />
@@ -499,10 +444,10 @@ const Index = () => {
         style={{ backgroundColor: "#363636" }}
       >
         <div className="container">
-          <h2>Grow With Go-Line</h2>
+          <h2>{t("home.growTitle")}</h2>
           <div className="row">
             <div
-              className="col-lg-6"
+              className="col-lg-6 col-md-12 col-sm-12"
               data-aos="flip-up"
               data-aos-delay={200}
               data-aos-duration={300}
@@ -510,15 +455,15 @@ const Index = () => {
               <div className="join-img">
                 <img alt="courier" src="assets/img/photo-6.jpg" />
                 <div className="Join-courier">
-                  <h3>Become a Driver</h3>
+                  <h3>{t("home.driverCTA")}</h3>
                   <Link href="become-partner" className="button button-2">
-                    Join Now <i className="fa-solid fa-arrow-right" />
+                    {t("home.joinNow")} <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </div>
               </div>
             </div>
             <div
-              className="col-lg-6"
+              className="col-lg-6 col-md-12 col-sm-12"
               data-aos="flip-up"
               data-aos-delay={300}
               data-aos-duration={400}
@@ -526,181 +471,10 @@ const Index = () => {
               <div className="join-img">
                 <img alt="business" src="assets/img/photo-7.jpg" />
                 <div className="Join-courier">
-                  <h3>Partner Your Business</h3>
+                  <h3>{t("home.businessCTA")}</h3>
                   <Link href="become-partner" className="button button-2">
-                    Join Now <i className="fa-solid fa-arrow-right" />
+                    {t("home.joinNow")} <i className="fa-solid fa-arrow-right" />
                   </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* news-section */}
-      <section className="news-section gap">
-        <div className="container">
-          <h2>Latest News &amp; Insights</h2>
-          <div className="row">
-            <div
-              className="col-xl-6 col-lg-12"
-              data-aos="flip-up"
-              data-aos-delay={200}
-              data-aos-duration={300}
-            >
-              <div className="news-posts-one">
-                <img alt="news" src="assets/img/photo-8.jpg" />
-                <div className="quickeat">
-                  {" "}
-                  <a href="#">news</a> <a href="#">go-line</a>
-                </div>
-                <h3>Go-Line Expands Coverage to 10 New Cities in 2026</h3>
-                <p>
-                  We are thrilled to announce our expansion into 10 new cities
-                  this year, bringing fast and reliable last-mile delivery to
-                  thousands of new businesses and consumers.
-                </p>{" "}
-                <Link href="/single-blog">
-                  Read More
-                  <i className="fa-solid fa-arrow-right" />
-                </Link>
-                <ul className="data">
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-user" />
-                      by Go-Line
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-regular fa-calendar-days" />
-                      15.Feb. 2026
-                    </h6>
-                  </li>
-                  <li>
-                    <h6>
-                      <i className="fa-solid fa-eye" />
-                      248
-                    </h6>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              className="col-xl-6 col-lg-12"
-              data-aos="flip-up"
-              data-aos-delay={300}
-              data-aos-duration={400}
-            >
-              <div className="news-post-two">
-                <img alt="blog-img" src="assets/img/food-1.jpg" />
-                <div className="news-post-two-data">
-                  <div className="quickeat">
-                    {" "}
-                    <a href="#">logistics</a> <a href="#">tips</a>
-                  </div>
-                  <h6>
-                    <Link href="single-blog">
-                      5 Ways to Reduce Last-Mile Delivery Costs for Your Business
-                    </Link>
-                  </h6>
-                  <p>
-                    Discover proven strategies that help e-commerce businesses
-                    cut shipping costs without sacrificing speed or quality...
-                  </p>
-                  <ul className="data">
-                    <li>
-                      <h6>
-                        <i className="fa-solid fa-user" />
-                        by Go-Line
-                      </h6>
-                    </li>
-                    <li>
-                      <h6>
-                        <i className="fa-regular fa-calendar-days" />
-                        10.Feb. 2026
-                      </h6>
-                    </li>
-                    <li>
-                      <h6>
-                        <i className="fa-solid fa-eye" />
-                        184
-                      </h6>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="news-post-two">
-                <img alt="blog-img" src="assets/img/food-2.jpg" />
-                <div className="news-post-two-data">
-                  <div className="quickeat">
-                    {" "}
-                    <a href="#">couriers</a> <a href="#">hiring</a>
-                  </div>
-                  <h6>
-                    <Link href="single-blog">300+ Active Drivers Now On The Go-Line Network</Link>
-                  </h6>
-                  <p>
-                    Our courier fleet has grown to over 300 active drivers,
-                    enabling us to serve more clients faster than ever before...
-                  </p>
-                  <ul className="data">
-                    <li>
-                      <h6>
-                        <i className="fa-solid fa-user" />
-                        by Go-Line
-                      </h6>
-                    </li>
-                    <li>
-                      <h6>
-                        <i className="fa-regular fa-calendar-days" />
-                        05.Feb. 2026
-                      </h6>
-                    </li>
-                    <li>
-                      <h6>
-                        <i className="fa-solid fa-eye" />
-                        321
-                      </h6>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="news-post-two end">
-                <img alt="blog-img" src="assets/img/food-3.jpg" />
-                <div className="news-post-two-data">
-                  <div className="quickeat">
-                    {" "}
-                    <a href="#">business</a> <a href="#">delivery</a>
-                  </div>
-                  <h6>
-                    <Link href="single-blog">
-                      How Real-Time Tracking Builds Customer Trust in Delivery
-                    </Link>
-                  </h6>
-                  <p>
-                    Transparency is the new competitive advantage. Learn how
-                    live tracking technology is reshaping customer expectations...
-                  </p>
-                  <ul className="data">
-                    <li>
-                      <h6>
-                        <i className="fa-solid fa-user" />
-                        by Go-Line
-                      </h6>
-                    </li>
-                    <li>
-                      <h6>
-                        <i className="fa-regular fa-calendar-days" />
-                        01.Feb. 2026
-                      </h6>
-                    </li>
-                    <li>
-                      <h6>
-                        <i className="fa-solid fa-eye" />
-                        197
-                      </h6>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -713,3 +487,9 @@ const Index = () => {
   );
 };
 export default Index;
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
