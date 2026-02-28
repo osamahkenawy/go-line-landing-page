@@ -152,7 +152,7 @@ const Index = () => {
               data-aos-duration={400}
             >
               <div className="logos-card">
-                <img alt="logo" src="assets/img/logos-2.jpg" />
+                <img alt="logo" src="assets/img/map_100_100.jpg" />
                 <div className="cafa">
                   <h4>{t("home.feature1Title")}</h4>
                   <div>
@@ -181,7 +181,7 @@ const Index = () => {
               data-aos-duration={500}
             >
               <div className="logos-card two">
-                <img alt="logo" src="assets/img/logos-1.jpg" />
+                <img alt="logo" src="assets/img/real_time_tracking.jpg" />
                 <div className="cafa">
                   <h4>{t("home.feature2Title")}</h4>
                   <div>
@@ -210,7 +210,7 @@ const Index = () => {
               data-aos-duration={600}
             >
               <div className="logos-card three">
-                <img alt="logo" src="assets/img/logos-3.jpg" />
+                <img alt="logo" src="assets/img/dedicated_support.jpg" />
                 <div className="cafa">
                   <h4>{t("home.feature3Title")}</h4>
                   <div>

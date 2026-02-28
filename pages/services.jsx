@@ -48,7 +48,7 @@ const Services = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                     <div className="counter-img">
-                      <img alt="driver" src="/assets/img/man-1.jpg" />
+                      <img alt="driver" src="/assets/img/man-1-goline.jpg" />
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6">
@@ -65,7 +65,7 @@ const Services = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-6 col-6">
                     <div className="counter-img">
-                      <img alt="team" src="/assets/img/man-3.jpg" />
+                      <img alt="team" src="/assets/img/man-3-goline.jpg" />
                     </div>
                   </div>
                 </div>
@@ -231,7 +231,7 @@ const Services = () => {
               data-aos-duration={300}
             >
               <div className="sit-at-img">
-                <img alt="man" src="/assets/img/man-3.jpg" />
+                <img alt="man" src="/assets/img/man-3-goline-new.jpg" />
                 <div className="counter-img-data">
                   <h2>5K+</h2>
                   <span>
