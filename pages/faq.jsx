@@ -12,7 +12,7 @@ const Faq = () => {
         <div className="container">
           <div className="row align-items-center">
             <div
-              className="col-lg-6"
+              className="col-lg-12"
               data-aos="fade-up"
               data-aos-delay={200}
               data-aos-duration={300}
@@ -31,17 +31,6 @@ const Faq = () => {
                 </ul>
                 <h2>{t("faq.heroTitle")}</h2>
                 <p>{t("faq.heroSubtitle")}</p>
-              </div>
-            </div>
-            <div
-              className="col-lg-6"
-              data-aos="fade-up"
-              data-aos-delay={300}
-              data-aos-duration={400}
-            >
-              <div className="join-img-blog">
-                <img alt="join" src="assets/img/faq.jpg" />
-                <i className="fa-solid fa-question" />
               </div>
             </div>
           </div>
@@ -242,15 +231,7 @@ const Faq = () => {
       <section className="form-section gap " style={{ background: "#fcfcfc" }}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
-              <div className="form-section-img">
-                <img
-                  alt="form-section-img"
-                  src="assets/img/form-section-img.png"
-                />
-              </div>
-            </div>
-            <div className="col-lg-6">
+            <div className="col-lg-12">
               <div className="join-courier">
                 <h3>{t("faq.formTitle")}</h3>
                 <p>{t("faq.formDesc")}</p>

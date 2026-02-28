@@ -96,7 +96,7 @@ const Services = () => {
               data-aos-duration={400}
             >
               <div className="services-card-style">
-                <i className="fa-solid fa-bolt" />
+                <i className="fa-solid fa-truck-fast" />
                 <h4><a href="#">{t("services.service1Title")}</a></h4>
                 <p>{t("services.service1Desc")}</p>
               </div>
@@ -108,7 +108,7 @@ const Services = () => {
               data-aos-duration={500}
             >
               <div className="services-card-style">
-                <i className="fa-solid fa-calendar-check" />
+                <i className="fa-solid fa-hourglass-end" />
                 <h4><a href="#">{t("services.service2Title")}</a></h4>
                 <p>{t("services.service2Desc")}</p>
               </div>
@@ -120,7 +120,7 @@ const Services = () => {
               data-aos-duration={700}
             >
               <div className="services-card-style">
-                <i className="fa-solid fa-boxes-stacked" />
+                <i className="fa-solid fa-tag" />
                 <h4><a href="#">{t("services.service3Title")}</a></h4>
                 <p>{t("services.service3Desc")}</p>
               </div>
@@ -132,7 +132,7 @@ const Services = () => {
               data-aos-duration={800}
             >
               <div className="services-card-style">
-                <i className="fa-solid fa-satellite-dish" />
+                <i className="fa-solid fa-map-location-dot" />
                 <h4><a href="#">{t("services.service4Title")}</a></h4>
                 <p>{t("services.service4Desc")}</p>
               </div>

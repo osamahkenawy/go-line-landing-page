@@ -55,12 +55,6 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="become-partner">
-                    {t("nav.becomePartner")}
-                    <i className="fa-solid fa-arrow-right" />
-                  </Link>
-                </li>
-                <li>
                   <Link href="faq">
                     {t("nav.faq")}
                     <i className="fa-solid fa-arrow-right" />
@@ -123,8 +117,8 @@ const Footer = () => {
           <p>{t("footer.copyright")}</p>
           <div className="privacy">
             {" "}
-            <a href="#">{t("footer.privacy")}</a>{" "}
-            <a href="#">{t("footer.terms")}</a>
+            <Link href="/privacy-policy">{t("footer.privacy")}</Link>{" "}
+            <Link href="/terms-and-conditions">{t("footer.terms")}</Link>
           </div>
         </div>
       </div>

@@ -60,20 +60,6 @@ const Header = ({ extraClass }) => {
                 </li>
                 <li className="navbar-dropdown">
                   <Link href="services">{t("nav.services")}</Link>
-                  <div className="dropdown">
-                    <Link href="services">{t("nav.allServices")}</Link>
-                    <Link href="pricing-table">{t("nav.pricing")}</Link>
-                    <Link href="become-partner">{t("nav.becomePartner")}</Link>
-                  </div>
-                </li>
-                <li className="navbar-dropdown">
-                  <Link href="#">{t("nav.pages")}</Link>
-                  <div className="dropdown">
-                    <Link href="blog">{t("nav.blog")}</Link>
-                    <Link href="single-blog">{t("nav.singleArticle")}</Link>
-                    <Link href="faq">{t("nav.faq")}</Link>
-                    <Link href="404">{t("nav.error404")}</Link>
-                  </div>
                 </li>
                 <li className="navbar-dropdown">
                   <Link href="contacts">{t("nav.contacts")}</Link>

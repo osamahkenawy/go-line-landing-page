@@ -120,3 +120,18 @@ img {
     padding-bottom: 40px;
   }
 }
+
+/* Legal pages (Privacy Policy, Terms & Conditions) */
+.legal-content h3 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #363636;
+}
+.legal-content p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
