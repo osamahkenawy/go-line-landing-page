@@ -2,25 +2,21 @@ import Link from "next/link";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 
-const MobileMenu = () => {
+const MobileMenu = ({ onLinkClick }) => {
   const { t } = useTranslation("common");
-  const [activeMenu, setActiveMenu] = useState("");
-  const activeMenuSet = (value) =>
-      setActiveMenu(activeMenu === value ? "" : value),
-    activeLi = (value) => (value === activeMenu ? "active" : "");
   return (
     <ul>
       <li>
-        <Link href="/">{t("nav.home")}</Link>
+        <Link href="/" onClick={onLinkClick}>{t("nav.home")}</Link>
       </li>
       <li>
-        <Link href="about">{t("nav.about")}</Link>
+        <Link href="/about" onClick={onLinkClick}>{t("nav.about")}</Link>
       </li>
       <li>
-        <Link href="services">{t("nav.services")}</Link>
+        <Link href="/services" onClick={onLinkClick}>{t("nav.services")}</Link>
       </li>
       <li>
-        <Link href="contacts">{t("nav.contacts")}</Link>
+        <Link href="/contacts" onClick={onLinkClick}>{t("nav.contacts")}</Link>
       </li>
     </ul>
   );

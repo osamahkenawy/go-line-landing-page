@@ -9,7 +9,7 @@ const Blog = () => {
     <Layout>
       <section
         className="hero-section about gap"
-        style={{ backgroundImage: "url(assets/img/background.png)" }}
+        style={{ backgroundImage: "url(/assets/img/background.png)" }}
       >
         <div className="container">
           <div className="row align-items-center">
@@ -42,7 +42,7 @@ const Blog = () => {
               data-aos-duration={400}
             >
               <div className="restaurants-girl-img blog food-photo-section">
-                <img alt="man" src="assets/img/blog-1.png" />{" "}
+                <img alt="man" src="/assets/img/blog-1.png" />{" "}
                 <a href="#" className="one">
                   <i className="fa-brands fa-facebook-f" />
                 </a>{" "}
@@ -69,7 +69,7 @@ const Blog = () => {
             >
               <div className="news-posts-one full">
                 <div className="blog-post-data-img">
-                  <img alt="man" src="assets/img/blog-2.jpg" />
+                  <img alt="man" src="/assets/img/blog-2.jpg" />
                   <div className="quickeat">
                     {" "}
                     <a href="#">news</a> <a href="#">go-line</a>
@@ -94,7 +94,7 @@ const Blog = () => {
               data-aos-duration={300}
             >
               <div className="news-posts-one blog">
-                <img alt="man" src="assets/img/news-2.jpg" />
+                <img alt="man" src="/assets/img/news-2.jpg" />
                 <div className="quickeat">
                   {" "}
                   <a href="#">news</a> <a href="#">go-line</a>
@@ -116,7 +116,7 @@ const Blog = () => {
               data-aos-duration={400}
             >
               <div className="news-posts-one blog">
-                <img alt="man" src="assets/img/news-3.jpg" />
+                <img alt="man" src="/assets/img/news-3.jpg" />
                 <div className="quickeat">
                   {" "}
                   <a href="#">news</a> <a href="#">go-line</a>
@@ -138,7 +138,7 @@ const Blog = () => {
               data-aos-duration={300}
             >
               <div className="news-posts-one blog">
-                <img alt="man" src="assets/img/news-4.jpg" />
+                <img alt="man" src="/assets/img/news-4.jpg" />
                 <div className="quickeat">
                   {" "}
                   <a href="#">news</a> <a href="#">go-line</a>
@@ -160,7 +160,7 @@ const Blog = () => {
               data-aos-duration={400}
             >
               <div className="news-posts-one blog">
-                <img alt="man" src="assets/img/news-5.jpg" />
+                <img alt="man" src="/assets/img/news-5.jpg" />
                 <div className="quickeat">
                   {" "}
                   <a href="#">news</a> <a href="#">go-line</a>
@@ -182,7 +182,7 @@ const Blog = () => {
               data-aos-duration={500}
             >
               <div className="news-posts-one blog">
-                <img alt="man" src="assets/img/news-6.jpg" />
+                <img alt="man" src="/assets/img/news-6.jpg" />
                 <div className="quickeat">
                   {" "}
                   <a href="#">news</a> <a href="#">go-line</a>

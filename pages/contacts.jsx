@@ -65,7 +65,7 @@ const Contacts = () => {
               data-aos-duration={400}
             >
               <div className="contact-us-img">
-                <img alt="contacts-img-girl" src="assets/img/contacts-1-goline.jpg" />
+                <img alt="contacts-img-girl" src="/assets/img/contacts-1-goline.jpg" />
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ const About = () => {
     <Layout>
       <section
         className="hero-section about gap"
-        style={{ backgroundImage: "url(assets/img/background-1.png)" }}
+        style={{ backgroundImage: "url(/assets/img/background-1.png)" }}
       >
         <div className="container">
           <div className="row align-items-center">
@@ -41,7 +41,7 @@ const About = () => {
               data-aos-duration={500}
             >
               <div className="about-img">
-                <img alt="man" src="assets/img/photo-9-goline.jpg" />
+                <img alt="man" src="/assets/img/photo-9-goline.jpg" />
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@ const About = () => {
               data-aos-duration={400}
             >
               <div className="our-mission-img">
-                <img alt="Illustration" src="assets/img/illustration-5-goline.jpg" />
+                <img alt="Illustration" src="/assets/img/illustration-5-goline.jpg" />
               </div>
             </div>
             <div
@@ -89,12 +89,12 @@ const About = () => {
                 <img
                   className="on"
                   alt="icon"
-                  src="assets/img/service-icon-2.svg"
+                  src="/assets/img/service-icon-2.svg"
                 />
                 <img
                   className="off"
                   alt="icon"
-                  src="assets/img/service-icon-1.svg"
+                  src="/assets/img/service-icon-1.svg"
                 />
                 <h3>{t("about.card1Title")}</h3>
                 <p>{t("about.card1Desc")}</p>
@@ -110,12 +110,12 @@ const About = () => {
                 <img
                   className="on"
                   alt="icon"
-                  src="assets/img/service-icon-3.svg"
+                  src="/assets/img/service-icon-3.svg"
                 />
                 <img
                   className="off"
                   alt="icon"
-                  src="assets/img/service-icon-4.svg"
+                  src="/assets/img/service-icon-4.svg"
                 />
                 <h3>{t("about.card2Title")}</h3>
                 <p>{t("about.card2Desc")}</p>
@@ -131,12 +131,12 @@ const About = () => {
                 <img
                   className="on"
                   alt="icon"
-                  src="assets/img/service-icon-5.svg"
+                  src="/assets/img/service-icon-5.svg"
                 />
                 <img
                   className="off"
                   alt="icon"
-                  src="assets/img/service-icon-6.svg"
+                  src="/assets/img/service-icon-6.svg"
                 />
                 <h3>{t("about.card3Title")}</h3>
                 <p>{t("about.card3Desc")}</p>
@@ -152,12 +152,12 @@ const About = () => {
                 <img
                   className="on"
                   alt="icon"
-                  src="assets/img/service-icon-7.svg"
+                  src="/assets/img/service-icon-7.svg"
                 />
                 <img
                   className="off"
                   alt="icon"
-                  src="assets/img/service-icon-8.svg"
+                  src="/assets/img/service-icon-8.svg"
                 />
                 <h3>{t("about.card4Title")}</h3>
                 <p>{t("about.card4Desc")}</p>
@@ -207,7 +207,7 @@ const About = () => {
               data-aos-duration={400}
             >
               <div className="video-section-img">
-                <img alt="elements" src="assets/img/lements-1-goline.jpg" />
+                <img alt="elements" src="/assets/img/lements-1-goline.jpg" />
                 <a
                   data-fancybox
                   href="https://www.youtube.com/watch?v=CKnGXZxK7zs"

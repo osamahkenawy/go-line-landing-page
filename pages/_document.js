@@ -11,7 +11,7 @@ export default function Document(props) {
         {/* meta end */}
 
         {/* favicon begin */}
-        <link rel="icon" href="assets/img/fav-icon.png" />
+        <link rel="icon" href="/assets/img/fav-icon.png" />
         {/* favicon end */}
 
         {/* public assets begin */}
@@ -37,13 +37,13 @@ export default function Document(props) {
           media="all"
         />
 
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-        <link rel="stylesheet" href="assets/css/nice-select.css" />
-        <link rel="stylesheet" href="assets/css/aos.css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="stylesheet" href="assets/css/responsive.css" />
-        <link rel="stylesheet" href="assets/css/color.css" />
+        <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="/assets/css/nice-select.css" />
+        <link rel="stylesheet" href="/assets/css/aos.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/responsive.css" />
+        <link rel="stylesheet" href="/assets/css/color.css" />
         {/* public assets end */}
       </Head>
       <body>

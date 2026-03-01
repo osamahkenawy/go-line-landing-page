@@ -8,7 +8,7 @@ const SingleBlog = () => {
     <Layout>
       <section
         className="hero-section about single-blog gap"
-        style={{ backgroundImage: "url(assets/img/background-3.png)" }}
+        style={{ backgroundImage: "url(/assets/img/background-3.png)" }}
         data-aos="flip-up"
         data-aos-delay={300}
         data-aos-duration={400}
@@ -57,14 +57,14 @@ const SingleBlog = () => {
             </div>
             <div className="col-lg-2">
               <div className="name-dedails">
-                <img alt="girl" src="assets/img/girl.jpg" />
+                <img alt="girl" src="/assets/img/girl.jpg" />
                 <h6>{t("singleBlog.authorName")}</h6>
                 <span>{t("singleBlog.authorRole")}</span>
               </div>
             </div>
             <div className="col-lg-12">
               <div className="img-blog-full">
-                <img alt="blog-page-img" src="assets/img/blog-page-1.jpg" />
+                <img alt="blog-page-img" src="/assets/img/blog-page-1.jpg" />
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@ const SingleBlog = () => {
                 </p>
                 <div className="quote">
                   <div className="quote-text">
-                    <img alt="quote" src="assets/img/elements-1.svg" />
+                    <img alt="quote" src="/assets/img/elements-1.svg" />
                     <div className="quote-icon">
                       <h4>
                         Whenever you feel like criticizing any one,» he told me,
@@ -148,12 +148,12 @@ const SingleBlog = () => {
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="photo-blog">
-                      <img alt="img" src="assets/img/photo-12.jpg" />
+                      <img alt="img" src="/assets/img/photo-12.jpg" />
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="photo-blog">
-                      <img alt="img" src="assets/img/photo-13.jpg" />
+                      <img alt="img" src="/assets/img/photo-13.jpg" />
                     </div>
                   </div>
                 </div>
@@ -194,7 +194,7 @@ const SingleBlog = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-4">
                     <div className="previous-posts">
-                      <img alt="img" src="assets/img/author-posts-1.jpg" />
+                      <img alt="img" src="/assets/img/author-posts-1.jpg" />
                       <div>
                         <h6>{t("singleBlog.prevPostTitle")}</h6>{" "}
                         <a href="#">{t("singleBlog.prevPostsLabel")}</a>
@@ -204,7 +204,7 @@ const SingleBlog = () => {
                   </div>
                   <div className="col-lg-4">
                     <div className="name-dedails">
-                      <img alt="girl" src="assets/img/girl.jpg" />
+                      <img alt="girl" src="/assets/img/girl.jpg" />
                     <h6>{t("singleBlog.authorName")}</h6>
                     <span>{t("singleBlog.authorRole")}</span>
                       <ul className="social-media">
@@ -235,7 +235,7 @@ const SingleBlog = () => {
                         <h6>{t("singleBlog.nextPostTitle")}</h6>{" "}
                         <a href="#">{t("singleBlog.nextPostLabel")}</a>
                       </div>
-                      <img alt="img" src="assets/img/author-posts-2.jpg" />
+                      <img alt="img" src="/assets/img/author-posts-2.jpg" />
                     </div>
                   </div>
                 </div>
@@ -267,7 +267,7 @@ const SingleBlog = () => {
                       <h6>Jackie Johnson</h6>
                       <span>30.Dec. 2022</span>
                     </div>
-                    <img alt="man" src="assets/img/author-img-1.jpg" />
+                    <img alt="man" src="/assets/img/author-img-1.jpg" />
                   </div>
                 </li>
                 <li className="reply one">
@@ -285,7 +285,7 @@ const SingleBlog = () => {
                     </a>
                   </div>
                   <div className="author-name-comment">
-                    <img alt="man" src="assets/img/author-img-2.jpg" />
+                    <img alt="man" src="/assets/img/author-img-2.jpg" />
                     <div>
                       <h6>Annie Adamson</h6>
                       <span>30.Dec. 2022</span>
@@ -308,7 +308,7 @@ const SingleBlog = () => {
                     </a>
                   </div>
                   <div className="author-name-comment">
-                    <img alt="man" src="assets/img/author-img-3.jpg" />
+                    <img alt="man" src="/assets/img/author-img-3.jpg" />
                     <div>
                       <h6>Annie Adamson</h6>
                       <span>30.Dec. 2022</span>
@@ -332,7 +332,7 @@ const SingleBlog = () => {
                     </a>
                   </div>
                   <div className="author-name-comment">
-                    <img alt="man" src="assets/img/author-img-2.jpg" />
+                    <img alt="man" src="/assets/img/author-img-2.jpg" />
                     <div>
                       <h6>Annie Adamson</h6>
                       <span>30.Dec. 2022</span>
@@ -371,7 +371,7 @@ const SingleBlog = () => {
                       <h6>Edgar Johnson</h6>
                       <span>30.Dec. 2022</span>
                     </div>
-                    <img alt="man" src="assets/img/author-img-4.jpg" />
+                    <img alt="man" src="/assets/img/author-img-4.jpg" />
                   </div>
                 </li>
                 <li className="show-all-button">

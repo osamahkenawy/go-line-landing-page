@@ -12,7 +12,7 @@ const Index = () => {
     <Layout>
       <section
         className="hero-section gap"
-        style={{ backgroundImage: "url(assets/img/background-1.png)" }}
+        style={{ backgroundImage: "url(/assets/img/background-1.png)" }}
       >
         <div className="container">
           <div className="row align-items-center">
@@ -26,10 +26,10 @@ const Index = () => {
                 <h1>{t("home.heroTitle")}</h1>
                 <p>{t("home.heroSubtitle")}</p>
                 <div className="nice-select-one">
-                  <Link href="contacts" className="button button-2">
+                  <Link href="/contacts" className="button button-2">
                     {t("home.getQuote")}
                   </Link>{" "}
-                  <Link href="services" className="button button-2" style={{ marginLeft: 12 }}>
+                  <Link href="/services" className="button button-2" style={{ marginLeft: 12 }}>
                     {t("home.ourServices")} <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </div>
@@ -42,9 +42,9 @@ const Index = () => {
               data-aos-duration={400}
             >
               <div className="img-restaurant">
-                <img alt="man" src="assets/img/photo-1-go-line.jpg" />
+                <img alt="man" src="/assets/img/photo-1-go-line.jpg" />
                 <div className="wilmington">
-                  {/* <img alt="img" src="assets/img/photo-2.jpg" /> */}
+                  {/* <img alt="img" src="/assets/img/photo-2.jpg" /> */}
                   <div>
                     <p>Delivery of the Day</p>
                     <h6>Express Shipment</h6>
@@ -89,7 +89,7 @@ const Index = () => {
               data-aos-duration={300}
             >
               <div className="work-card">
-                <img alt="img" src="assets/img/Illustration-1.jpg" />
+                <img alt="img" src="/assets/img/Illustration-1.jpg" />
                 <h4>
                   <span>01</span> {t("home.step1Title")}
                 </h4>
@@ -103,7 +103,7 @@ const Index = () => {
               data-aos-duration={400}
             >
               <div className="work-card">
-                <img alt="img" src="assets/img/Illustration-2.jpg" />
+                <img alt="img" src="/assets/img/Illustration-2.jpg" />
                 <h4>
                   <span>02</span> {t("home.step2Title")}
                 </h4>
@@ -117,7 +117,7 @@ const Index = () => {
               data-aos-duration={500}
             >
               <div className="work-card">
-                <img alt="img" src="assets/img/Illustration-3.jpg" />
+                <img alt="img" src="/assets/img/Illustration-3.jpg" />
                 <h4>
                   <span>03</span> {t("home.step3Title")}
                 </h4>
@@ -152,7 +152,7 @@ const Index = () => {
               data-aos-duration={400}
             >
               <div className="logos-card">
-                <img alt="logo" src="assets/img/map_100_100.jpg" />
+                <img alt="logo" src="/assets/img/map_100_100.jpg" />
                 <div className="cafa">
                   <h4>{t("home.feature1Title")}</h4>
                   <div>
@@ -181,7 +181,7 @@ const Index = () => {
               data-aos-duration={500}
             >
               <div className="logos-card two">
-                <img alt="logo" src="assets/img/real_time_tracking.jpg" />
+                <img alt="logo" src="/assets/img/real_time_tracking.jpg" />
                 <div className="cafa">
                   <h4>{t("home.feature2Title")}</h4>
                   <div>
@@ -210,7 +210,7 @@ const Index = () => {
               data-aos-duration={600}
             >
               <div className="logos-card three">
-                <img alt="logo" src="assets/img/dedicated_support.jpg" />
+                <img alt="logo" src="/assets/img/dedicated_support.jpg" />
                 <div className="cafa">
                   <h4>{t("home.feature3Title")}</h4>
                   <div>
@@ -234,7 +234,7 @@ const Index = () => {
             </div>
           </div>
           <div className="button-gap">
-            <Link href="services" className="button button-2 non">
+            <Link href="/services" className="button button-2 non">
               {t("home.allServicesBtn")}
               <i className="fa-solid fa-arrow-right" />
             </Link>
@@ -244,7 +244,7 @@ const Index = () => {
       {/* your-favorite-food */}
       <section
         className="your-favorite-food gap"
-        style={{ backgroundImage: "url(assets/img/background-1.png)" }}
+        style={{ backgroundImage: "url(/assets/img/background-1.png)" }}
       >
         <div className="container">
           <div className="row align-items-center">
@@ -255,7 +255,7 @@ const Index = () => {
               data-aos-duration={300}
             >
               <div className="food-photo-section">
-                <img alt="img" src="assets/img/photo-3.png" />{" "}
+                <img alt="img" src="/assets/img/photo-3.jpg" />{" "}
                 <a href="#" className="one">
                   <i className="fa-solid fa-bolt" />
                   {t("home.tagExpress")}
@@ -279,7 +279,7 @@ const Index = () => {
               <div className="food-content-section">
                 <h2>{t("home.solutionsTitle")}</h2>
                 <p>{t("home.solutionsDesc")}</p>{" "}
-                <Link href="services" className="button button-2">
+                <Link href="/services" className="button button-2">
                   {t("home.exploreServices")}
                 </Link>
               </div>
@@ -373,7 +373,6 @@ const Index = () => {
                     <SwiperSlide className="item">
                       <h4>{t("home.review1Text")}</h4>
                       <div className="thomas">
-                        <img alt="client" src="assets/img/photo-5.jpg" />
                         <div>
                           <h6>{t("home.review1Author")}</h6>
                           <i className="fa-solid fa-star" />
@@ -387,7 +386,6 @@ const Index = () => {
                     <SwiperSlide className="item">
                       <h4>{t("home.review2Text")}</h4>
                       <div className="thomas">
-                        <img alt="client" src="assets/img/man-2.jpg" />
                         <div>
                           <h6>{t("home.review2Author")}</h6>
                           <i className="fa-solid fa-star" />
@@ -401,7 +399,6 @@ const Index = () => {
                     <SwiperSlide className="item">
                       <h4>{t("home.review3Text")}</h4>
                       <div className="thomas">
-                        <img alt="client" src="assets/img/photo-5.jpg" />
                         <div>
                           <h6>{t("home.review3Author")}</h6>
                           <i className="fa-solid fa-star" />
@@ -431,7 +428,7 @@ const Index = () => {
               data-aos-duration={400}
             >
               <div className="reviews-img">
-                <img alt="photo" src="assets/img/photo-4.png" />
+                <img alt="photo" src="/assets/img/photo-4.jpg" />
                 <i className="fa-regular fa-thumbs-up" />
               </div>
             </div>
@@ -453,10 +450,10 @@ const Index = () => {
               data-aos-duration={300}
             >
               <div className="join-img">
-                <img alt="courier" src="assets/img/photo-6.jpg" />
+                <img alt="courier" src="/assets/img/photo-6-goline.jpg" />
                 <div className="Join-courier">
                   <h3>{t("home.driverCTA")}</h3>
-                  <Link href="become-partner" className="button button-2">
+                  <Link href="/become-partner" className="button button-2">
                     {t("home.joinNow")} <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </div>
@@ -469,10 +466,10 @@ const Index = () => {
               data-aos-duration={400}
             >
               <div className="join-img">
-                <img alt="business" src="assets/img/photo-7.jpg" />
+                <img alt="business" src="/assets/img/640_402-photo-070ogline.jpg" />
                 <div className="Join-courier">
                   <h3>{t("home.businessCTA")}</h3>
-                  <Link href="become-partner" className="button button-2">
+                  <Link href="/become-partner" className="button button-2">
                     {t("home.joinNow")} <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </div>

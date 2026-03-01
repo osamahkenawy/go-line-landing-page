@@ -10,23 +10,7 @@ const Footer = () => {
           <div className="col-lg-5 col-md-6 col-sm-12">
             <div className="footer-description">
               <Link href="/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={163}
-                  height={38}
-                  viewBox="0 0 163 38"
-                >
-                  <text
-                    transform="translate(0 28)"
-                    fill="#fff"
-                    fontSize={26}
-                    fontFamily="Poppins"
-                    fontWeight={700}
-                  >
-                    <tspan x={0} y={0}>GO</tspan>
-                    <tspan y={0} fill="#ff6a00">-LINE</tspan>
-                  </text>
-                </svg>
+                <img src="/assets/img/full_logo_white.png" alt="Go-Line" style={{ height: 60, maxWidth: '100%', objectFit: 'contain' }} />
               </Link>
               <h2>{t("footer.tagline")}</h2>
               <p>{t("footer.description")}</p>
@@ -43,25 +27,25 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="about">
+                  <Link href="/about">
                     {t("nav.about")}
                     <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </li>
                 <li>
-                  <Link href="services">
+                  <Link href="/services">
                     {t("nav.services")}
                     <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </li>
                 <li>
-                  <Link href="faq">
+                  <Link href="/faq">
                     {t("nav.faq")}
                     <i className="fa-solid fa-arrow-right" />
                   </Link>
                 </li>
                 <li>
-                  <Link href="contacts">
+                  <Link href="/contacts">
                     {t("nav.contacts")}
                     <i className="fa-solid fa-arrow-right" />
                   </Link>

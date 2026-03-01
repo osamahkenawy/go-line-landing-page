@@ -9,7 +9,7 @@ const Services = () => {
     <Layout>
       <section
         className="hero-section about gap"
-        style={{ backgroundImage: "url(assets/img/background.png)" }}
+        style={{ backgroundImage: "url(/assets/img/background.png)" }}
       >
         <div className="container">
           <div className="row align-items-center">
@@ -108,7 +108,7 @@ const Services = () => {
               data-aos-duration={500}
             >
               <div className="services-card-style">
-                <i className="fa-solid fa-hourglass-end" />
+                <i className="fa-solid fa-clock" />
                 <h4><a href="#">{t("services.service2Title")}</a></h4>
                 <p>{t("services.service2Desc")}</p>
               </div>
@@ -120,7 +120,7 @@ const Services = () => {
               data-aos-duration={700}
             >
               <div className="services-card-style">
-                <i className="fa-solid fa-tag" />
+                <i className="fa-solid fa-hand-holding-dollar" />
                 <h4><a href="#">{t("services.service3Title")}</a></h4>
                 <p>{t("services.service3Desc")}</p>
               </div>
@@ -132,7 +132,7 @@ const Services = () => {
               data-aos-duration={800}
             >
               <div className="services-card-style">
-                <i className="fa-solid fa-map-location-dot" />
+                <i className="fa-solid fa-globe" />
                 <h4><a href="#">{t("services.service4Title")}</a></h4>
                 <p>{t("services.service4Desc")}</p>
               </div>
